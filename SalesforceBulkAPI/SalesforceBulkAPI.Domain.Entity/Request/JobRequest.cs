@@ -2,7 +2,7 @@
 
 namespace SalesforceBulkAPI.Domain.Entity.Request
 {
-    public class CreateJobRequest
+    public class JobRequest
     {
         public JobContentType ContentType { get; set; }
 

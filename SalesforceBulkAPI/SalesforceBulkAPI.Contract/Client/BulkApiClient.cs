@@ -14,7 +14,7 @@ using SalesforceBulkAPI.Domain.Service;
 
 namespace SalesforceBulkAPI.Contract.Client
 {
-    public class BulkApiClient : IJobService, IBatchService
+    public class BulkApiClient : IJobService, IBatchService, IDisposable
     {
         private readonly string _loginURL;
         private readonly string _password;
@@ -276,6 +276,11 @@ namespace SalesforceBulkAPI.Contract.Client
             wc.Headers.Add("X-SFDC-Session: " + _loginResult.sessionId);
 
             return wc;
+        }
+
+        public void Dispose()
+        {
+            GC.SuppressFinalize(this);
         }
     }
 }

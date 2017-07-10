@@ -2,7 +2,7 @@
 
 namespace SalesforceBulkAPI.Domain.Entity.Request
 {
-    public class CreateBatchRequest
+    public class BatchRequest
     {
         public string JobId { get; set; }
         public string BatchContents { get; set; }

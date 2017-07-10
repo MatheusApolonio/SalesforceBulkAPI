@@ -1,6 +1,6 @@
 ﻿namespace SalesforceBulkAPI.Domain.Entity.Request
 {
-    public class CreateAttachmentBatchRequest : CreateBatchRequest
+    public class AttachmentBatchRequest : BatchRequest
     {
         public string FilePath { get; set; }
         public string ParentId { get; set; }
