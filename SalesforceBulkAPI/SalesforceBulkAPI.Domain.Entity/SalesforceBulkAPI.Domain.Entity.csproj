@@ -82,9 +82,9 @@
     <Compile Include="Enums\JobContentType.cs" />
     <Compile Include="Enums\JobOperation.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Request\CreateAttachmentBatchRequest.cs" />
-    <Compile Include="Request\CreateBatchRequest.cs" />
-    <Compile Include="Request\CreateJobRequest.cs" />
+    <Compile Include="Request\AttachmentBatchRequest.cs" />
+    <Compile Include="Request\BatchRequest.cs" />
+    <Compile Include="Request\JobRequest.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

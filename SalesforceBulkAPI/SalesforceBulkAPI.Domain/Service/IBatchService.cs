@@ -10,8 +10,8 @@ namespace SalesforceBulkAPI.Domain.Service
 {
     public interface IBatchService
     {
-        Batch CreateAttachmentBatch(CreateAttachmentBatchRequest request);
-        Batch CreateBatch(CreateBatchRequest request);
+        Batch CreateAttachmentBatch(AttachmentBatchRequest request);
+        Batch CreateBatch(BatchRequest request);
         Batch GetBatch(string jobId, string batchId);
         IList<Batch> GetBatches(string jobId);
         string GetBatchRequest(string jobId, string batchId);

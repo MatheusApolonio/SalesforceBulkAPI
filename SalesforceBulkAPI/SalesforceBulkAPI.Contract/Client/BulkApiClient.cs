@@ -35,7 +35,7 @@ namespace SalesforceBulkAPI.Contract.Client
             Login();
         }
 
-        public Batch CreateAttachmentBatch(CreateAttachmentBatchRequest request)
+        public Batch CreateAttachmentBatch(AttachmentBatchRequest request)
         {
             var requestTxtFileCSVContents = "Name,ParentId,Body" + Environment.NewLine;
             requestTxtFileCSVContents += request.FilePath + "," + request.ParentId + ",#" + request.FilePath;
@@ -73,7 +73,7 @@ namespace SalesforceBulkAPI.Contract.Client
             }
         }
 
-        public Batch CreateBatch(CreateBatchRequest createBatchRequest)
+        public Batch CreateBatch(BatchRequest createBatchRequest)
         {
             var requestUrl = _baseRequestUrl + createBatchRequest.JobId + "/batch";
 
@@ -143,7 +143,7 @@ namespace SalesforceBulkAPI.Contract.Client
             return resultXML;
         }
 
-        public Job CreateJob(CreateJobRequest createJobRequest)
+        public Job CreateJob(JobRequest createJobRequest)
         {
             var jobRequestXML =
                 @"<?xml version=""1.0"" encoding=""UTF-8""?>
