@@ -269,6 +269,16 @@
     <WebReferences Include="Web References\" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\SalesforceBulkAPI.Domain.Entity\SalesforceBulkAPI.Domain.Entity.csproj">
+      <Project>{B7F4E373-AA7D-462F-B384-DA1269602539}</Project>
+      <Name>SalesforceBulkAPI.Domain.Entity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SalesforceBulkAPI.Domain\SalesforceBulkAPI.Domain.csproj">
+      <Project>{7D9712F7-F26F-48CC-A37B-E1883196A568}</Project>
+      <Name>SalesforceBulkAPI.Domain</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
     <WebReferenceUrl Include="D:\Git\SalesforceBulkAPI\SalesforceBulkAPI\resources\EnterpriseWSDL.xml">
       <UrlBehavior>Dynamic</UrlBehavior>
       <RelPath>Web References\SFEnterprise\</RelPath>
@@ -280,16 +290,6 @@
       <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
       <CachedSettingsPropName>SalesforceBulkAPI_Contract_SFEnterprise_SforceService</CachedSettingsPropName>
     </WebReferenceUrl>
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\SalesforceBulkAPI.Domain.Entity\SalesforceBulkAPI.Domain.Entity.csproj">
-      <Project>{B7F4E373-AA7D-462F-B384-DA1269602539}</Project>
-      <Name>SalesforceBulkAPI.Domain.Entity</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\SalesforceBulkAPI.Domain\SalesforceBulkAPI.Domain.csproj">
-      <Project>{7D9712F7-F26F-48CC-A37B-E1883196A568}</Project>
-      <Name>SalesforceBulkAPI.Domain</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
