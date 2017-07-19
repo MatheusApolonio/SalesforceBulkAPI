@@ -1,7 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?>
-<definitions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:tns="urn:enterprise.soap.sforce.com" xmlns:fns="urn:fault.enterprise.soap.sforce.com" xmlns:ens="urn:sobject.enterprise.soap.sforce.com" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" targetNamespace="urn:enterprise.soap.sforce.com" xmlns="http://schemas.xmlsoap.org/wsdl/">
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<definitions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:tns="urn:enterprise.soap.sforce.com"
+             xmlns:fns="urn:fault.enterprise.soap.sforce.com" xmlns:ens="urn:sobject.enterprise.soap.sforce.com"
+             xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" targetNamespace="urn:enterprise.soap.sforce.com"
+             xmlns="http://schemas.xmlsoap.org/wsdl/">
   <types>
-    <xsd:schema xmlns="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" targetNamespace="urn:sobject.enterprise.soap.sforce.com">
+    <xsd:schema xmlns="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified"
+                targetNamespace="urn:sobject.enterprise.soap.sforce.com">
       <xsd:import namespace="urn:enterprise.soap.sforce.com" />
       <xsd:complexType name="sObject">
         <xsd:sequence>
@@ -426,7 +431,8 @@
         <xsd:complexContent mixed="false">
           <xsd:extension base="ens:sObject">
             <xsd:sequence>
-              <xsd:element minOccurs="0" name="ActionLinkGroupTemplate" nillable="true" type="ens:ActionLinkGroupTemplate" />
+              <xsd:element minOccurs="0" name="ActionLinkGroupTemplate" nillable="true"
+                           type="ens:ActionLinkGroupTemplate" />
               <xsd:element minOccurs="0" name="ActionLinkGroupTemplateId" nillable="true" type="tns:ID" />
               <xsd:element minOccurs="0" name="ActionUrl" nillable="true" type="xsd:string" />
               <xsd:element minOccurs="0" name="CreatedBy" nillable="true" type="ens:User" />
@@ -1276,7 +1282,8 @@
         <xsd:complexContent mixed="false">
           <xsd:extension base="ens:sObject">
             <xsd:sequence>
-              <xsd:element minOccurs="0" name="AuraDefinitionBundleInfo" nillable="true" type="ens:AuraDefinitionBundleInfo" />
+              <xsd:element minOccurs="0" name="AuraDefinitionBundleInfo" nillable="true"
+                           type="ens:AuraDefinitionBundleInfo" />
               <xsd:element minOccurs="0" name="AuraDefinitionBundleInfoId" nillable="true" type="xsd:string" />
               <xsd:element minOccurs="0" name="AuraDefinitionId" nillable="true" type="xsd:string" />
               <xsd:element minOccurs="0" name="DefType" nillable="true" type="xsd:string" />
@@ -2985,7 +2992,8 @@
             <xsd:sequence>
               <xsd:element minOccurs="0" name="ContentWorkspace" nillable="true" type="ens:ContentWorkspace" />
               <xsd:element minOccurs="0" name="ContentWorkspaceId" nillable="true" type="tns:ID" />
-              <xsd:element minOccurs="0" name="ContentWorkspacePermission" nillable="true" type="ens:ContentWorkspacePermission" />
+              <xsd:element minOccurs="0" name="ContentWorkspacePermission" nillable="true"
+                           type="ens:ContentWorkspacePermission" />
               <xsd:element minOccurs="0" name="ContentWorkspacePermissionId" nillable="true" type="tns:ID" />
               <xsd:element minOccurs="0" name="CreatedBy" nillable="true" type="ens:User" />
               <xsd:element minOccurs="0" name="CreatedById" nillable="true" type="tns:ID" />
@@ -3678,7 +3686,8 @@
               <xsd:element minOccurs="0" name="CreatedBy" nillable="true" type="ens:User" />
               <xsd:element minOccurs="0" name="CreatedById" nillable="true" type="tns:ID" />
               <xsd:element minOccurs="0" name="CreatedDate" nillable="true" type="xsd:dateTime" />
-              <xsd:element minOccurs="0" name="DataAssessmentFieldMetric" nillable="true" type="ens:DataAssessmentFieldMetric" />
+              <xsd:element minOccurs="0" name="DataAssessmentFieldMetric" nillable="true"
+                           type="ens:DataAssessmentFieldMetric" />
               <xsd:element minOccurs="0" name="DataAssessmentFieldMetricId" nillable="true" type="tns:ID" />
               <xsd:element minOccurs="0" name="FieldValue" nillable="true" type="xsd:string" />
               <xsd:element minOccurs="0" name="IsDeleted" nillable="true" type="xsd:boolean" />
@@ -4560,7 +4569,8 @@
         <xsd:complexContent mixed="false">
           <xsd:extension base="ens:sObject">
             <xsd:sequence>
-              <xsd:element minOccurs="0" maxOccurs="unbounded" name="AcceptedEventInviteeIds" nillable="true" type="tns:ID" />
+              <xsd:element minOccurs="0" maxOccurs="unbounded" name="AcceptedEventInviteeIds" nillable="true"
+                           type="tns:ID" />
               <xsd:element minOccurs="0" name="AcceptedEventRelations" nillable="true" type="tns:QueryResult" />
               <xsd:element minOccurs="0" name="Account" nillable="true" type="ens:Account" />
               <xsd:element minOccurs="0" name="AccountId" nillable="true" type="tns:ID" />
@@ -4573,7 +4583,8 @@
               <xsd:element minOccurs="0" name="CreatedBy" nillable="true" type="ens:User" />
               <xsd:element minOccurs="0" name="CreatedById" nillable="true" type="tns:ID" />
               <xsd:element minOccurs="0" name="CreatedDate" nillable="true" type="xsd:dateTime" />
-              <xsd:element minOccurs="0" maxOccurs="unbounded" name="DeclinedEventInviteeIds" nillable="true" type="tns:ID" />
+              <xsd:element minOccurs="0" maxOccurs="unbounded" name="DeclinedEventInviteeIds" nillable="true"
+                           type="tns:ID" />
               <xsd:element minOccurs="0" name="DeclinedEventRelations" nillable="true" type="tns:QueryResult" />
               <xsd:element minOccurs="0" name="Description" nillable="true" type="xsd:string" />
               <xsd:element minOccurs="0" name="DurationInMinutes" nillable="true" type="xsd:int" />
@@ -4614,7 +4625,8 @@
               <xsd:element minOccurs="0" name="Subject" nillable="true" type="xsd:string" />
               <xsd:element minOccurs="0" name="SystemModstamp" nillable="true" type="xsd:dateTime" />
               <xsd:element minOccurs="0" name="TopicAssignments" nillable="true" type="tns:QueryResult" />
-              <xsd:element minOccurs="0" maxOccurs="unbounded" name="UndecidedEventInviteeIds" nillable="true" type="tns:ID" />
+              <xsd:element minOccurs="0" maxOccurs="unbounded" name="UndecidedEventInviteeIds" nillable="true"
+                           type="tns:ID" />
               <xsd:element minOccurs="0" name="UndecidedEventRelations" nillable="true" type="tns:QueryResult" />
               <xsd:element minOccurs="0" name="What" nillable="true" type="ens:sObject" />
               <xsd:element minOccurs="0" name="WhatId" nillable="true" type="tns:ID" />
@@ -5930,9 +5942,12 @@
               <xsd:element minOccurs="0" name="LastUsedDate" nillable="true" type="xsd:dateTime" />
               <xsd:element minOccurs="0" name="Name" nillable="true" type="xsd:string" />
               <xsd:element minOccurs="0" name="SecurityOptionsAttachmentHasFlash" nillable="true" type="xsd:boolean" />
-              <xsd:element minOccurs="0" name="SecurityOptionsAttachmentHasXSSThreat" nillable="true" type="xsd:boolean" />
-              <xsd:element minOccurs="0" name="SecurityOptionsAttachmentScannedForXSS" nillable="true" type="xsd:boolean" />
-              <xsd:element minOccurs="0" name="SecurityOptionsAttachmentScannedforFlash" nillable="true" type="xsd:boolean" />
+              <xsd:element minOccurs="0" name="SecurityOptionsAttachmentHasXSSThreat" nillable="true"
+                           type="xsd:boolean" />
+              <xsd:element minOccurs="0" name="SecurityOptionsAttachmentScannedForXSS" nillable="true"
+                           type="xsd:boolean" />
+              <xsd:element minOccurs="0" name="SecurityOptionsAttachmentScannedforFlash" nillable="true"
+                           type="xsd:boolean" />
               <xsd:element minOccurs="0" name="SystemModstamp" nillable="true" type="xsd:dateTime" />
             </xsd:sequence>
           </xsd:extension>
@@ -6021,8 +6036,10 @@
               <xsd:element minOccurs="0" name="AuthProvider" nillable="true" type="ens:AuthProvider" />
               <xsd:element minOccurs="0" name="AuthProviderId" nillable="true" type="tns:ID" />
               <xsd:element minOccurs="0" name="CalloutOptionsAllowMergeFieldsInBody" nillable="true" type="xsd:boolean" />
-              <xsd:element minOccurs="0" name="CalloutOptionsAllowMergeFieldsInHeader" nillable="true" type="xsd:boolean" />
-              <xsd:element minOccurs="0" name="CalloutOptionsGenerateAuthorizationHeader" nillable="true" type="xsd:boolean" />
+              <xsd:element minOccurs="0" name="CalloutOptionsAllowMergeFieldsInHeader" nillable="true"
+                           type="xsd:boolean" />
+              <xsd:element minOccurs="0" name="CalloutOptionsGenerateAuthorizationHeader" nillable="true"
+                           type="xsd:boolean" />
               <xsd:element minOccurs="0" name="CreatedBy" nillable="true" type="ens:User" />
               <xsd:element minOccurs="0" name="CreatedById" nillable="true" type="tns:ID" />
               <xsd:element minOccurs="0" name="CreatedDate" nillable="true" type="xsd:dateTime" />
@@ -6799,7 +6816,8 @@
               <xsd:element minOccurs="0" name="OrganizationType" nillable="true" type="xsd:string" />
               <xsd:element minOccurs="0" name="Phone" nillable="true" type="xsd:string" />
               <xsd:element minOccurs="0" name="PostalCode" nillable="true" type="xsd:string" />
-              <xsd:element minOccurs="0" name="PreferencesRequireOpportunityProducts" nillable="true" type="xsd:boolean" />
+              <xsd:element minOccurs="0" name="PreferencesRequireOpportunityProducts" nillable="true"
+                           type="xsd:boolean" />
               <xsd:element minOccurs="0" name="PreferencesTerminateOldestSession" nillable="true" type="xsd:boolean" />
               <xsd:element minOccurs="0" name="PreferencesTransactionSecurityPolicy" nillable="true" type="xsd:boolean" />
               <xsd:element minOccurs="0" name="PrimaryContact" nillable="true" type="xsd:string" />
@@ -7008,7 +7026,8 @@
               <xsd:element minOccurs="0" name="PermissionsAddDirectMessageMembers" nillable="true" type="xsd:boolean" />
               <xsd:element minOccurs="0" name="PermissionsAllowEmailIC" nillable="true" type="xsd:boolean" />
               <xsd:element minOccurs="0" name="PermissionsAllowUniversalSearch" nillable="true" type="xsd:boolean" />
-              <xsd:element minOccurs="0" name="PermissionsAllowViewEditConvertedLeads" nillable="true" type="xsd:boolean" />
+              <xsd:element minOccurs="0" name="PermissionsAllowViewEditConvertedLeads" nillable="true"
+                           type="xsd:boolean" />
               <xsd:element minOccurs="0" name="PermissionsAllowViewKnowledge" nillable="true" type="xsd:boolean" />
               <xsd:element minOccurs="0" name="PermissionsApiEnabled" nillable="true" type="xsd:boolean" />
               <xsd:element minOccurs="0" name="PermissionsAssignPermissionSets" nillable="true" type="xsd:boolean" />
@@ -7020,16 +7039,19 @@
               <xsd:element minOccurs="0" name="PermissionsCanApproveFeedPost" nillable="true" type="xsd:boolean" />
               <xsd:element minOccurs="0" name="PermissionsCanInsertFeedSystemFields" nillable="true" type="xsd:boolean" />
               <xsd:element minOccurs="0" name="PermissionsCanUseNewDashboardBuilder" nillable="true" type="xsd:boolean" />
-              <xsd:element minOccurs="0" name="PermissionsChatterComposeUiCodesnippet" nillable="true" type="xsd:boolean" />
+              <xsd:element minOccurs="0" name="PermissionsChatterComposeUiCodesnippet" nillable="true"
+                           type="xsd:boolean" />
               <xsd:element minOccurs="0" name="PermissionsChatterEditOwnPost" nillable="true" type="xsd:boolean" />
               <xsd:element minOccurs="0" name="PermissionsChatterEditOwnRecordPost" nillable="true" type="xsd:boolean" />
               <xsd:element minOccurs="0" name="PermissionsChatterFileLink" nillable="true" type="xsd:boolean" />
               <xsd:element minOccurs="0" name="PermissionsChatterForSharePoint" nillable="true" type="xsd:boolean" />
               <xsd:element minOccurs="0" name="PermissionsChatterInternalUser" nillable="true" type="xsd:boolean" />
-              <xsd:element minOccurs="0" name="PermissionsChatterInviteExternalUsers" nillable="true" type="xsd:boolean" />
+              <xsd:element minOccurs="0" name="PermissionsChatterInviteExternalUsers" nillable="true"
+                           type="xsd:boolean" />
               <xsd:element minOccurs="0" name="PermissionsChatterOwnGroups" nillable="true" type="xsd:boolean" />
               <xsd:element minOccurs="0" name="PermissionsConfigCustomRecs" nillable="true" type="xsd:boolean" />
-              <xsd:element minOccurs="0" name="PermissionsConnectOrgToEnvironmentHub" nillable="true" type="xsd:boolean" />
+              <xsd:element minOccurs="0" name="PermissionsConnectOrgToEnvironmentHub" nillable="true"
+                           type="xsd:boolean" />
               <xsd:element minOccurs="0" name="PermissionsContentAdministrator" nillable="true" type="xsd:boolean" />
               <xsd:element minOccurs="0" name="PermissionsContentWorkspaces" nillable="true" type="xsd:boolean" />
               <xsd:element minOccurs="0" name="PermissionsConvertLeads" nillable="true" type="xsd:boolean" />
@@ -7066,7 +7088,8 @@
               <xsd:element minOccurs="0" name="PermissionsEmailMass" nillable="true" type="xsd:boolean" />
               <xsd:element minOccurs="0" name="PermissionsEmailSingle" nillable="true" type="xsd:boolean" />
               <xsd:element minOccurs="0" name="PermissionsEmailTemplateManagement" nillable="true" type="xsd:boolean" />
-              <xsd:element minOccurs="0" name="PermissionsEnableCommunityAppLauncher" nillable="true" type="xsd:boolean" />
+              <xsd:element minOccurs="0" name="PermissionsEnableCommunityAppLauncher" nillable="true"
+                           type="xsd:boolean" />
               <xsd:element minOccurs="0" name="PermissionsEnableNotifications" nillable="true" type="xsd:boolean" />
               <xsd:element minOccurs="0" name="PermissionsExportReport" nillable="true" type="xsd:boolean" />
               <xsd:element minOccurs="0" name="PermissionsFlowUFLRequired" nillable="true" type="xsd:boolean" />
@@ -7079,11 +7102,13 @@
               <xsd:element minOccurs="0" name="PermissionsImportLeads" nillable="true" type="xsd:boolean" />
               <xsd:element minOccurs="0" name="PermissionsImportPersonal" nillable="true" type="xsd:boolean" />
               <xsd:element minOccurs="0" name="PermissionsInstallPackaging" nillable="true" type="xsd:boolean" />
-              <xsd:element minOccurs="0" name="PermissionsLightningConsoleAllowedForUser" nillable="true" type="xsd:boolean" />
+              <xsd:element minOccurs="0" name="PermissionsLightningConsoleAllowedForUser" nillable="true"
+                           type="xsd:boolean" />
               <xsd:element minOccurs="0" name="PermissionsLightningExperienceUser" nillable="true" type="xsd:boolean" />
               <xsd:element minOccurs="0" name="PermissionsManageAnalyticSnapshots" nillable="true" type="xsd:boolean" />
               <xsd:element minOccurs="0" name="PermissionsManageAuthProviders" nillable="true" type="xsd:boolean" />
-              <xsd:element minOccurs="0" name="PermissionsManageBusinessHourHolidays" nillable="true" type="xsd:boolean" />
+              <xsd:element minOccurs="0" name="PermissionsManageBusinessHourHolidays" nillable="true"
+                           type="xsd:boolean" />
               <xsd:element minOccurs="0" name="PermissionsManageCallCenters" nillable="true" type="xsd:boolean" />
               <xsd:element minOccurs="0" name="PermissionsManageCases" nillable="true" type="xsd:boolean" />
               <xsd:element minOccurs="0" name="PermissionsManageCategories" nillable="true" type="xsd:boolean" />
@@ -7106,19 +7131,23 @@
               <xsd:element minOccurs="0" name="PermissionsManageInternalUsers" nillable="true" type="xsd:boolean" />
               <xsd:element minOccurs="0" name="PermissionsManageIpAddresses" nillable="true" type="xsd:boolean" />
               <xsd:element minOccurs="0" name="PermissionsManageKnowledge" nillable="true" type="xsd:boolean" />
-              <xsd:element minOccurs="0" name="PermissionsManageKnowledgeImportExport" nillable="true" type="xsd:boolean" />
+              <xsd:element minOccurs="0" name="PermissionsManageKnowledgeImportExport" nillable="true"
+                           type="xsd:boolean" />
               <xsd:element minOccurs="0" name="PermissionsManageLeads" nillable="true" type="xsd:boolean" />
               <xsd:element minOccurs="0" name="PermissionsManageLoginAccessPolicies" nillable="true" type="xsd:boolean" />
               <xsd:element minOccurs="0" name="PermissionsManageMobile" nillable="true" type="xsd:boolean" />
               <xsd:element minOccurs="0" name="PermissionsManageNetworks" nillable="true" type="xsd:boolean" />
               <xsd:element minOccurs="0" name="PermissionsManagePasswordPolicies" nillable="true" type="xsd:boolean" />
-              <xsd:element minOccurs="0" name="PermissionsManageProfilesPermissionsets" nillable="true" type="xsd:boolean" />
+              <xsd:element minOccurs="0" name="PermissionsManageProfilesPermissionsets" nillable="true"
+                           type="xsd:boolean" />
               <xsd:element minOccurs="0" name="PermissionsManagePvtRptsAndDashbds" nillable="true" type="xsd:boolean" />
               <xsd:element minOccurs="0" name="PermissionsManageRemoteAccess" nillable="true" type="xsd:boolean" />
               <xsd:element minOccurs="0" name="PermissionsManageReportsInPubFolders" nillable="true" type="xsd:boolean" />
               <xsd:element minOccurs="0" name="PermissionsManageRoles" nillable="true" type="xsd:boolean" />
-              <xsd:element minOccurs="0" name="PermissionsManageSearchPromotionRules" nillable="true" type="xsd:boolean" />
-              <xsd:element minOccurs="0" name="PermissionsManageSessionPermissionSets" nillable="true" type="xsd:boolean" />
+              <xsd:element minOccurs="0" name="PermissionsManageSearchPromotionRules" nillable="true"
+                           type="xsd:boolean" />
+              <xsd:element minOccurs="0" name="PermissionsManageSessionPermissionSets" nillable="true"
+                           type="xsd:boolean" />
               <xsd:element minOccurs="0" name="PermissionsManageSharing" nillable="true" type="xsd:boolean" />
               <xsd:element minOccurs="0" name="PermissionsManageSolutions" nillable="true" type="xsd:boolean" />
               <xsd:element minOccurs="0" name="PermissionsManageSynonyms" nillable="true" type="xsd:boolean" />
@@ -7135,7 +7164,8 @@
               <xsd:element minOccurs="0" name="PermissionsPasswordNeverExpires" nillable="true" type="xsd:boolean" />
               <xsd:element minOccurs="0" name="PermissionsPreventClassicExperience" nillable="true" type="xsd:boolean" />
               <xsd:element minOccurs="0" name="PermissionsPublishPackaging" nillable="true" type="xsd:boolean" />
-              <xsd:element minOccurs="0" name="PermissionsRemoveDirectMessageMembers" nillable="true" type="xsd:boolean" />
+              <xsd:element minOccurs="0" name="PermissionsRemoveDirectMessageMembers" nillable="true"
+                           type="xsd:boolean" />
               <xsd:element minOccurs="0" name="PermissionsResetPasswords" nillable="true" type="xsd:boolean" />
               <xsd:element minOccurs="0" name="PermissionsRunFlow" nillable="true" type="xsd:boolean" />
               <xsd:element minOccurs="0" name="PermissionsRunReports" nillable="true" type="xsd:boolean" />
@@ -7145,12 +7175,15 @@
               <xsd:element minOccurs="0" name="PermissionsSendAnnouncementEmails" nillable="true" type="xsd:boolean" />
               <xsd:element minOccurs="0" name="PermissionsSendSitRequests" nillable="true" type="xsd:boolean" />
               <xsd:element minOccurs="0" name="PermissionsShareInternalArticles" nillable="true" type="xsd:boolean" />
-              <xsd:element minOccurs="0" name="PermissionsShowCompanyNameAsUserBadge" nillable="true" type="xsd:boolean" />
+              <xsd:element minOccurs="0" name="PermissionsShowCompanyNameAsUserBadge" nillable="true"
+                           type="xsd:boolean" />
               <xsd:element minOccurs="0" name="PermissionsSolutionImport" nillable="true" type="xsd:boolean" />
               <xsd:element minOccurs="0" name="PermissionsSubmitMacrosAllowed" nillable="true" type="xsd:boolean" />
-              <xsd:element minOccurs="0" name="PermissionsSubscribeReportToOtherUsers" nillable="true" type="xsd:boolean" />
+              <xsd:element minOccurs="0" name="PermissionsSubscribeReportToOtherUsers" nillable="true"
+                           type="xsd:boolean" />
               <xsd:element minOccurs="0" name="PermissionsSubscribeReportsRunAsUser" nillable="true" type="xsd:boolean" />
-              <xsd:element minOccurs="0" name="PermissionsSubscribeToLightningReports" nillable="true" type="xsd:boolean" />
+              <xsd:element minOccurs="0" name="PermissionsSubscribeToLightningReports" nillable="true"
+                           type="xsd:boolean" />
               <xsd:element minOccurs="0" name="PermissionsTransferAnyCase" nillable="true" type="xsd:boolean" />
               <xsd:element minOccurs="0" name="PermissionsTransferAnyEntity" nillable="true" type="xsd:boolean" />
               <xsd:element minOccurs="0" name="PermissionsTransferAnyLead" nillable="true" type="xsd:boolean" />
@@ -7212,50 +7245,74 @@
               <xsd:element minOccurs="0" name="MaximumPermissionsAccessCMC" nillable="true" type="xsd:boolean" />
               <xsd:element minOccurs="0" name="MaximumPermissionsActivateContract" nillable="true" type="xsd:boolean" />
               <xsd:element minOccurs="0" name="MaximumPermissionsActivateOrder" nillable="true" type="xsd:boolean" />
-              <xsd:element minOccurs="0" name="MaximumPermissionsAddDirectMessageMembers" nillable="true" type="xsd:boolean" />
+              <xsd:element minOccurs="0" name="MaximumPermissionsAddDirectMessageMembers" nillable="true"
+                           type="xsd:boolean" />
               <xsd:element minOccurs="0" name="MaximumPermissionsAllowEmailIC" nillable="true" type="xsd:boolean" />
-              <xsd:element minOccurs="0" name="MaximumPermissionsAllowUniversalSearch" nillable="true" type="xsd:boolean" />
-              <xsd:element minOccurs="0" name="MaximumPermissionsAllowViewEditConvertedLeads" nillable="true" type="xsd:boolean" />
+              <xsd:element minOccurs="0" name="MaximumPermissionsAllowUniversalSearch" nillable="true"
+                           type="xsd:boolean" />
+              <xsd:element minOccurs="0" name="MaximumPermissionsAllowViewEditConvertedLeads" nillable="true"
+                           type="xsd:boolean" />
               <xsd:element minOccurs="0" name="MaximumPermissionsAllowViewKnowledge" nillable="true" type="xsd:boolean" />
               <xsd:element minOccurs="0" name="MaximumPermissionsApiEnabled" nillable="true" type="xsd:boolean" />
-              <xsd:element minOccurs="0" name="MaximumPermissionsAssignPermissionSets" nillable="true" type="xsd:boolean" />
+              <xsd:element minOccurs="0" name="MaximumPermissionsAssignPermissionSets" nillable="true"
+                           type="xsd:boolean" />
               <xsd:element minOccurs="0" name="MaximumPermissionsAssignTopics" nillable="true" type="xsd:boolean" />
               <xsd:element minOccurs="0" name="MaximumPermissionsAuthorApex" nillable="true" type="xsd:boolean" />
               <xsd:element minOccurs="0" name="MaximumPermissionsBulkApiHardDelete" nillable="true" type="xsd:boolean" />
               <xsd:element minOccurs="0" name="MaximumPermissionsBulkMacrosAllowed" nillable="true" type="xsd:boolean" />
               <xsd:element minOccurs="0" name="MaximumPermissionsCampaignInfluence2" nillable="true" type="xsd:boolean" />
               <xsd:element minOccurs="0" name="MaximumPermissionsCanApproveFeedPost" nillable="true" type="xsd:boolean" />
-              <xsd:element minOccurs="0" name="MaximumPermissionsCanInsertFeedSystemFields" nillable="true" type="xsd:boolean" />
-              <xsd:element minOccurs="0" name="MaximumPermissionsCanUseNewDashboardBuilder" nillable="true" type="xsd:boolean" />
-              <xsd:element minOccurs="0" name="MaximumPermissionsChatterComposeUiCodesnippet" nillable="true" type="xsd:boolean" />
+              <xsd:element minOccurs="0" name="MaximumPermissionsCanInsertFeedSystemFields" nillable="true"
+                           type="xsd:boolean" />
+              <xsd:element minOccurs="0" name="MaximumPermissionsCanUseNewDashboardBuilder" nillable="true"
+                           type="xsd:boolean" />
+              <xsd:element minOccurs="0" name="MaximumPermissionsChatterComposeUiCodesnippet" nillable="true"
+                           type="xsd:boolean" />
               <xsd:element minOccurs="0" name="MaximumPermissionsChatterEditOwnPost" nillable="true" type="xsd:boolean" />
-              <xsd:element minOccurs="0" name="MaximumPermissionsChatterEditOwnRecordPost" nillable="true" type="xsd:boolean" />
+              <xsd:element minOccurs="0" name="MaximumPermissionsChatterEditOwnRecordPost" nillable="true"
+                           type="xsd:boolean" />
               <xsd:element minOccurs="0" name="MaximumPermissionsChatterFileLink" nillable="true" type="xsd:boolean" />
-              <xsd:element minOccurs="0" name="MaximumPermissionsChatterForSharePoint" nillable="true" type="xsd:boolean" />
-              <xsd:element minOccurs="0" name="MaximumPermissionsChatterInternalUser" nillable="true" type="xsd:boolean" />
-              <xsd:element minOccurs="0" name="MaximumPermissionsChatterInviteExternalUsers" nillable="true" type="xsd:boolean" />
+              <xsd:element minOccurs="0" name="MaximumPermissionsChatterForSharePoint" nillable="true"
+                           type="xsd:boolean" />
+              <xsd:element minOccurs="0" name="MaximumPermissionsChatterInternalUser" nillable="true"
+                           type="xsd:boolean" />
+              <xsd:element minOccurs="0" name="MaximumPermissionsChatterInviteExternalUsers" nillable="true"
+                           type="xsd:boolean" />
               <xsd:element minOccurs="0" name="MaximumPermissionsChatterOwnGroups" nillable="true" type="xsd:boolean" />
               <xsd:element minOccurs="0" name="MaximumPermissionsConfigCustomRecs" nillable="true" type="xsd:boolean" />
-              <xsd:element minOccurs="0" name="MaximumPermissionsConnectOrgToEnvironmentHub" nillable="true" type="xsd:boolean" />
-              <xsd:element minOccurs="0" name="MaximumPermissionsContentAdministrator" nillable="true" type="xsd:boolean" />
+              <xsd:element minOccurs="0" name="MaximumPermissionsConnectOrgToEnvironmentHub" nillable="true"
+                           type="xsd:boolean" />
+              <xsd:element minOccurs="0" name="MaximumPermissionsContentAdministrator" nillable="true"
+                           type="xsd:boolean" />
               <xsd:element minOccurs="0" name="MaximumPermissionsContentWorkspaces" nillable="true" type="xsd:boolean" />
               <xsd:element minOccurs="0" name="MaximumPermissionsConvertLeads" nillable="true" type="xsd:boolean" />
-              <xsd:element minOccurs="0" name="MaximumPermissionsCreateCustomizeDashboards" nillable="true" type="xsd:boolean" />
-              <xsd:element minOccurs="0" name="MaximumPermissionsCreateCustomizeFilters" nillable="true" type="xsd:boolean" />
-              <xsd:element minOccurs="0" name="MaximumPermissionsCreateCustomizeReports" nillable="true" type="xsd:boolean" />
-              <xsd:element minOccurs="0" name="MaximumPermissionsCreateDashboardFolders" nillable="true" type="xsd:boolean" />
+              <xsd:element minOccurs="0" name="MaximumPermissionsCreateCustomizeDashboards" nillable="true"
+                           type="xsd:boolean" />
+              <xsd:element minOccurs="0" name="MaximumPermissionsCreateCustomizeFilters" nillable="true"
+                           type="xsd:boolean" />
+              <xsd:element minOccurs="0" name="MaximumPermissionsCreateCustomizeReports" nillable="true"
+                           type="xsd:boolean" />
+              <xsd:element minOccurs="0" name="MaximumPermissionsCreateDashboardFolders" nillable="true"
+                           type="xsd:boolean" />
               <xsd:element minOccurs="0" name="MaximumPermissionsCreatePackaging" nillable="true" type="xsd:boolean" />
-              <xsd:element minOccurs="0" name="MaximumPermissionsCreateReportFolders" nillable="true" type="xsd:boolean" />
+              <xsd:element minOccurs="0" name="MaximumPermissionsCreateReportFolders" nillable="true"
+                           type="xsd:boolean" />
               <xsd:element minOccurs="0" name="MaximumPermissionsCreateTopics" nillable="true" type="xsd:boolean" />
               <xsd:element minOccurs="0" name="MaximumPermissionsCreateWorkspaces" nillable="true" type="xsd:boolean" />
-              <xsd:element minOccurs="0" name="MaximumPermissionsCustomMobileAppsAccess" nillable="true" type="xsd:boolean" />
-              <xsd:element minOccurs="0" name="MaximumPermissionsCustomSidebarOnAllPages" nillable="true" type="xsd:boolean" />
-              <xsd:element minOccurs="0" name="MaximumPermissionsCustomizeApplication" nillable="true" type="xsd:boolean" />
+              <xsd:element minOccurs="0" name="MaximumPermissionsCustomMobileAppsAccess" nillable="true"
+                           type="xsd:boolean" />
+              <xsd:element minOccurs="0" name="MaximumPermissionsCustomSidebarOnAllPages" nillable="true"
+                           type="xsd:boolean" />
+              <xsd:element minOccurs="0" name="MaximumPermissionsCustomizeApplication" nillable="true"
+                           type="xsd:boolean" />
               <xsd:element minOccurs="0" name="MaximumPermissionsDelegatedTwoFactor" nillable="true" type="xsd:boolean" />
-              <xsd:element minOccurs="0" name="MaximumPermissionsDeleteActivatedContract" nillable="true" type="xsd:boolean" />
+              <xsd:element minOccurs="0" name="MaximumPermissionsDeleteActivatedContract" nillable="true"
+                           type="xsd:boolean" />
               <xsd:element minOccurs="0" name="MaximumPermissionsDeleteTopics" nillable="true" type="xsd:boolean" />
-              <xsd:element minOccurs="0" name="MaximumPermissionsDistributeFromPersWksp" nillable="true" type="xsd:boolean" />
-              <xsd:element minOccurs="0" name="MaximumPermissionsEditActivatedOrders" nillable="true" type="xsd:boolean" />
+              <xsd:element minOccurs="0" name="MaximumPermissionsDistributeFromPersWksp" nillable="true"
+                           type="xsd:boolean" />
+              <xsd:element minOccurs="0" name="MaximumPermissionsEditActivatedOrders" nillable="true"
+                           type="xsd:boolean" />
               <xsd:element minOccurs="0" name="MaximumPermissionsEditBrandTemplates" nillable="true" type="xsd:boolean" />
               <xsd:element minOccurs="0" name="MaximumPermissionsEditCaseComments" nillable="true" type="xsd:boolean" />
               <xsd:element minOccurs="0" name="MaximumPermissionsEditEvent" nillable="true" type="xsd:boolean" />
@@ -7263,18 +7320,25 @@
               <xsd:element minOccurs="0" name="MaximumPermissionsEditKnowledge" nillable="true" type="xsd:boolean" />
               <xsd:element minOccurs="0" name="MaximumPermissionsEditMyDashboards" nillable="true" type="xsd:boolean" />
               <xsd:element minOccurs="0" name="MaximumPermissionsEditMyReports" nillable="true" type="xsd:boolean" />
-              <xsd:element minOccurs="0" name="MaximumPermissionsEditOppLineItemUnitPrice" nillable="true" type="xsd:boolean" />
-              <xsd:element minOccurs="0" name="MaximumPermissionsEditPublicDocuments" nillable="true" type="xsd:boolean" />
-              <xsd:element minOccurs="0" name="MaximumPermissionsEditPublicTemplates" nillable="true" type="xsd:boolean" />
+              <xsd:element minOccurs="0" name="MaximumPermissionsEditOppLineItemUnitPrice" nillable="true"
+                           type="xsd:boolean" />
+              <xsd:element minOccurs="0" name="MaximumPermissionsEditPublicDocuments" nillable="true"
+                           type="xsd:boolean" />
+              <xsd:element minOccurs="0" name="MaximumPermissionsEditPublicTemplates" nillable="true"
+                           type="xsd:boolean" />
               <xsd:element minOccurs="0" name="MaximumPermissionsEditReadonlyFields" nillable="true" type="xsd:boolean" />
               <xsd:element minOccurs="0" name="MaximumPermissionsEditTask" nillable="true" type="xsd:boolean" />
               <xsd:element minOccurs="0" name="MaximumPermissionsEditTopics" nillable="true" type="xsd:boolean" />
-              <xsd:element minOccurs="0" name="MaximumPermissionsEmailAdministration" nillable="true" type="xsd:boolean" />
+              <xsd:element minOccurs="0" name="MaximumPermissionsEmailAdministration" nillable="true"
+                           type="xsd:boolean" />
               <xsd:element minOccurs="0" name="MaximumPermissionsEmailMass" nillable="true" type="xsd:boolean" />
               <xsd:element minOccurs="0" name="MaximumPermissionsEmailSingle" nillable="true" type="xsd:boolean" />
-              <xsd:element minOccurs="0" name="MaximumPermissionsEmailTemplateManagement" nillable="true" type="xsd:boolean" />
-              <xsd:element minOccurs="0" name="MaximumPermissionsEnableCommunityAppLauncher" nillable="true" type="xsd:boolean" />
-              <xsd:element minOccurs="0" name="MaximumPermissionsEnableNotifications" nillable="true" type="xsd:boolean" />
+              <xsd:element minOccurs="0" name="MaximumPermissionsEmailTemplateManagement" nillable="true"
+                           type="xsd:boolean" />
+              <xsd:element minOccurs="0" name="MaximumPermissionsEnableCommunityAppLauncher" nillable="true"
+                           type="xsd:boolean" />
+              <xsd:element minOccurs="0" name="MaximumPermissionsEnableNotifications" nillable="true"
+                           type="xsd:boolean" />
               <xsd:element minOccurs="0" name="MaximumPermissionsExportReport" nillable="true" type="xsd:boolean" />
               <xsd:element minOccurs="0" name="MaximumPermissionsFlowUFLRequired" nillable="true" type="xsd:boolean" />
               <xsd:element minOccurs="0" name="MaximumPermissionsForceTwoFactor" nillable="true" type="xsd:boolean" />
@@ -7282,87 +7346,128 @@
               <xsd:element minOccurs="0" name="MaximumPermissionsHideReadByList" nillable="true" type="xsd:boolean" />
               <xsd:element minOccurs="0" name="MaximumPermissionsIdentityConnect" nillable="true" type="xsd:boolean" />
               <xsd:element minOccurs="0" name="MaximumPermissionsIdentityEnabled" nillable="true" type="xsd:boolean" />
-              <xsd:element minOccurs="0" name="MaximumPermissionsImportCustomObjects" nillable="true" type="xsd:boolean" />
+              <xsd:element minOccurs="0" name="MaximumPermissionsImportCustomObjects" nillable="true"
+                           type="xsd:boolean" />
               <xsd:element minOccurs="0" name="MaximumPermissionsImportLeads" nillable="true" type="xsd:boolean" />
               <xsd:element minOccurs="0" name="MaximumPermissionsImportPersonal" nillable="true" type="xsd:boolean" />
               <xsd:element minOccurs="0" name="MaximumPermissionsInstallPackaging" nillable="true" type="xsd:boolean" />
-              <xsd:element minOccurs="0" name="MaximumPermissionsLightningConsoleAllowedForUser" nillable="true" type="xsd:boolean" />
-              <xsd:element minOccurs="0" name="MaximumPermissionsLightningExperienceUser" nillable="true" type="xsd:boolean" />
-              <xsd:element minOccurs="0" name="MaximumPermissionsManageAnalyticSnapshots" nillable="true" type="xsd:boolean" />
-              <xsd:element minOccurs="0" name="MaximumPermissionsManageAuthProviders" nillable="true" type="xsd:boolean" />
-              <xsd:element minOccurs="0" name="MaximumPermissionsManageBusinessHourHolidays" nillable="true" type="xsd:boolean" />
+              <xsd:element minOccurs="0" name="MaximumPermissionsLightningConsoleAllowedForUser" nillable="true"
+                           type="xsd:boolean" />
+              <xsd:element minOccurs="0" name="MaximumPermissionsLightningExperienceUser" nillable="true"
+                           type="xsd:boolean" />
+              <xsd:element minOccurs="0" name="MaximumPermissionsManageAnalyticSnapshots" nillable="true"
+                           type="xsd:boolean" />
+              <xsd:element minOccurs="0" name="MaximumPermissionsManageAuthProviders" nillable="true"
+                           type="xsd:boolean" />
+              <xsd:element minOccurs="0" name="MaximumPermissionsManageBusinessHourHolidays" nillable="true"
+                           type="xsd:boolean" />
               <xsd:element minOccurs="0" name="MaximumPermissionsManageCallCenters" nillable="true" type="xsd:boolean" />
               <xsd:element minOccurs="0" name="MaximumPermissionsManageCases" nillable="true" type="xsd:boolean" />
               <xsd:element minOccurs="0" name="MaximumPermissionsManageCategories" nillable="true" type="xsd:boolean" />
               <xsd:element minOccurs="0" name="MaximumPermissionsManageCertificates" nillable="true" type="xsd:boolean" />
-              <xsd:element minOccurs="0" name="MaximumPermissionsManageChatterMessages" nillable="true" type="xsd:boolean" />
-              <xsd:element minOccurs="0" name="MaximumPermissionsManageContentPermissions" nillable="true" type="xsd:boolean" />
-              <xsd:element minOccurs="0" name="MaximumPermissionsManageContentProperties" nillable="true" type="xsd:boolean" />
+              <xsd:element minOccurs="0" name="MaximumPermissionsManageChatterMessages" nillable="true"
+                           type="xsd:boolean" />
+              <xsd:element minOccurs="0" name="MaximumPermissionsManageContentPermissions" nillable="true"
+                           type="xsd:boolean" />
+              <xsd:element minOccurs="0" name="MaximumPermissionsManageContentProperties" nillable="true"
+                           type="xsd:boolean" />
               <xsd:element minOccurs="0" name="MaximumPermissionsManageContentTypes" nillable="true" type="xsd:boolean" />
-              <xsd:element minOccurs="0" name="MaximumPermissionsManageCustomPermissions" nillable="true" type="xsd:boolean" />
-              <xsd:element minOccurs="0" name="MaximumPermissionsManageCustomReportTypes" nillable="true" type="xsd:boolean" />
-              <xsd:element minOccurs="0" name="MaximumPermissionsManageDashbdsInPubFolders" nillable="true" type="xsd:boolean" />
-              <xsd:element minOccurs="0" name="MaximumPermissionsManageDataCategories" nillable="true" type="xsd:boolean" />
-              <xsd:element minOccurs="0" name="MaximumPermissionsManageDataIntegrations" nillable="true" type="xsd:boolean" />
-              <xsd:element minOccurs="0" name="MaximumPermissionsManageDynamicDashboards" nillable="true" type="xsd:boolean" />
-              <xsd:element minOccurs="0" name="MaximumPermissionsManageEmailClientConfig" nillable="true" type="xsd:boolean" />
-              <xsd:element minOccurs="0" name="MaximumPermissionsManageEncryptionKeys" nillable="true" type="xsd:boolean" />
-              <xsd:element minOccurs="0" name="MaximumPermissionsManageExchangeConfig" nillable="true" type="xsd:boolean" />
+              <xsd:element minOccurs="0" name="MaximumPermissionsManageCustomPermissions" nillable="true"
+                           type="xsd:boolean" />
+              <xsd:element minOccurs="0" name="MaximumPermissionsManageCustomReportTypes" nillable="true"
+                           type="xsd:boolean" />
+              <xsd:element minOccurs="0" name="MaximumPermissionsManageDashbdsInPubFolders" nillable="true"
+                           type="xsd:boolean" />
+              <xsd:element minOccurs="0" name="MaximumPermissionsManageDataCategories" nillable="true"
+                           type="xsd:boolean" />
+              <xsd:element minOccurs="0" name="MaximumPermissionsManageDataIntegrations" nillable="true"
+                           type="xsd:boolean" />
+              <xsd:element minOccurs="0" name="MaximumPermissionsManageDynamicDashboards" nillable="true"
+                           type="xsd:boolean" />
+              <xsd:element minOccurs="0" name="MaximumPermissionsManageEmailClientConfig" nillable="true"
+                           type="xsd:boolean" />
+              <xsd:element minOccurs="0" name="MaximumPermissionsManageEncryptionKeys" nillable="true"
+                           type="xsd:boolean" />
+              <xsd:element minOccurs="0" name="MaximumPermissionsManageExchangeConfig" nillable="true"
+                           type="xsd:boolean" />
               <xsd:element minOccurs="0" name="MaximumPermissionsManageHealthCheck" nillable="true" type="xsd:boolean" />
               <xsd:element minOccurs="0" name="MaximumPermissionsManageInteraction" nillable="true" type="xsd:boolean" />
-              <xsd:element minOccurs="0" name="MaximumPermissionsManageInternalUsers" nillable="true" type="xsd:boolean" />
+              <xsd:element minOccurs="0" name="MaximumPermissionsManageInternalUsers" nillable="true"
+                           type="xsd:boolean" />
               <xsd:element minOccurs="0" name="MaximumPermissionsManageIpAddresses" nillable="true" type="xsd:boolean" />
               <xsd:element minOccurs="0" name="MaximumPermissionsManageKnowledge" nillable="true" type="xsd:boolean" />
-              <xsd:element minOccurs="0" name="MaximumPermissionsManageKnowledgeImportExport" nillable="true" type="xsd:boolean" />
+              <xsd:element minOccurs="0" name="MaximumPermissionsManageKnowledgeImportExport" nillable="true"
+                           type="xsd:boolean" />
               <xsd:element minOccurs="0" name="MaximumPermissionsManageLeads" nillable="true" type="xsd:boolean" />
-              <xsd:element minOccurs="0" name="MaximumPermissionsManageLoginAccessPolicies" nillable="true" type="xsd:boolean" />
+              <xsd:element minOccurs="0" name="MaximumPermissionsManageLoginAccessPolicies" nillable="true"
+                           type="xsd:boolean" />
               <xsd:element minOccurs="0" name="MaximumPermissionsManageMobile" nillable="true" type="xsd:boolean" />
               <xsd:element minOccurs="0" name="MaximumPermissionsManageNetworks" nillable="true" type="xsd:boolean" />
-              <xsd:element minOccurs="0" name="MaximumPermissionsManagePasswordPolicies" nillable="true" type="xsd:boolean" />
-              <xsd:element minOccurs="0" name="MaximumPermissionsManageProfilesPermissionsets" nillable="true" type="xsd:boolean" />
-              <xsd:element minOccurs="0" name="MaximumPermissionsManagePvtRptsAndDashbds" nillable="true" type="xsd:boolean" />
+              <xsd:element minOccurs="0" name="MaximumPermissionsManagePasswordPolicies" nillable="true"
+                           type="xsd:boolean" />
+              <xsd:element minOccurs="0" name="MaximumPermissionsManageProfilesPermissionsets" nillable="true"
+                           type="xsd:boolean" />
+              <xsd:element minOccurs="0" name="MaximumPermissionsManagePvtRptsAndDashbds" nillable="true"
+                           type="xsd:boolean" />
               <xsd:element minOccurs="0" name="MaximumPermissionsManageRemoteAccess" nillable="true" type="xsd:boolean" />
-              <xsd:element minOccurs="0" name="MaximumPermissionsManageReportsInPubFolders" nillable="true" type="xsd:boolean" />
+              <xsd:element minOccurs="0" name="MaximumPermissionsManageReportsInPubFolders" nillable="true"
+                           type="xsd:boolean" />
               <xsd:element minOccurs="0" name="MaximumPermissionsManageRoles" nillable="true" type="xsd:boolean" />
-              <xsd:element minOccurs="0" name="MaximumPermissionsManageSearchPromotionRules" nillable="true" type="xsd:boolean" />
-              <xsd:element minOccurs="0" name="MaximumPermissionsManageSessionPermissionSets" nillable="true" type="xsd:boolean" />
+              <xsd:element minOccurs="0" name="MaximumPermissionsManageSearchPromotionRules" nillable="true"
+                           type="xsd:boolean" />
+              <xsd:element minOccurs="0" name="MaximumPermissionsManageSessionPermissionSets" nillable="true"
+                           type="xsd:boolean" />
               <xsd:element minOccurs="0" name="MaximumPermissionsManageSharing" nillable="true" type="xsd:boolean" />
               <xsd:element minOccurs="0" name="MaximumPermissionsManageSolutions" nillable="true" type="xsd:boolean" />
               <xsd:element minOccurs="0" name="MaximumPermissionsManageSynonyms" nillable="true" type="xsd:boolean" />
               <xsd:element minOccurs="0" name="MaximumPermissionsManageTwoFactor" nillable="true" type="xsd:boolean" />
-              <xsd:element minOccurs="0" name="MaximumPermissionsManageUnlistedGroups" nillable="true" type="xsd:boolean" />
+              <xsd:element minOccurs="0" name="MaximumPermissionsManageUnlistedGroups" nillable="true"
+                           type="xsd:boolean" />
               <xsd:element minOccurs="0" name="MaximumPermissionsManageUsers" nillable="true" type="xsd:boolean" />
               <xsd:element minOccurs="0" name="MaximumPermissionsMassInlineEdit" nillable="true" type="xsd:boolean" />
               <xsd:element minOccurs="0" name="MaximumPermissionsMergeTopics" nillable="true" type="xsd:boolean" />
               <xsd:element minOccurs="0" name="MaximumPermissionsModerateChatter" nillable="true" type="xsd:boolean" />
-              <xsd:element minOccurs="0" name="MaximumPermissionsModerateNetworkUsers" nillable="true" type="xsd:boolean" />
+              <xsd:element minOccurs="0" name="MaximumPermissionsModerateNetworkUsers" nillable="true"
+                           type="xsd:boolean" />
               <xsd:element minOccurs="0" name="MaximumPermissionsModifyAllData" nillable="true" type="xsd:boolean" />
               <xsd:element minOccurs="0" name="MaximumPermissionsModifySecureAgents" nillable="true" type="xsd:boolean" />
               <xsd:element minOccurs="0" name="MaximumPermissionsNewReportBuilder" nillable="true" type="xsd:boolean" />
-              <xsd:element minOccurs="0" name="MaximumPermissionsPasswordNeverExpires" nillable="true" type="xsd:boolean" />
-              <xsd:element minOccurs="0" name="MaximumPermissionsPreventClassicExperience" nillable="true" type="xsd:boolean" />
+              <xsd:element minOccurs="0" name="MaximumPermissionsPasswordNeverExpires" nillable="true"
+                           type="xsd:boolean" />
+              <xsd:element minOccurs="0" name="MaximumPermissionsPreventClassicExperience" nillable="true"
+                           type="xsd:boolean" />
               <xsd:element minOccurs="0" name="MaximumPermissionsPublishPackaging" nillable="true" type="xsd:boolean" />
-              <xsd:element minOccurs="0" name="MaximumPermissionsRemoveDirectMessageMembers" nillable="true" type="xsd:boolean" />
+              <xsd:element minOccurs="0" name="MaximumPermissionsRemoveDirectMessageMembers" nillable="true"
+                           type="xsd:boolean" />
               <xsd:element minOccurs="0" name="MaximumPermissionsResetPasswords" nillable="true" type="xsd:boolean" />
               <xsd:element minOccurs="0" name="MaximumPermissionsRunFlow" nillable="true" type="xsd:boolean" />
               <xsd:element minOccurs="0" name="MaximumPermissionsRunReports" nillable="true" type="xsd:boolean" />
               <xsd:element minOccurs="0" name="MaximumPermissionsSalesConsole" nillable="true" type="xsd:boolean" />
               <xsd:element minOccurs="0" name="MaximumPermissionsScheduleReports" nillable="true" type="xsd:boolean" />
-              <xsd:element minOccurs="0" name="MaximumPermissionsSelectFilesFromSalesforce" nillable="true" type="xsd:boolean" />
-              <xsd:element minOccurs="0" name="MaximumPermissionsSendAnnouncementEmails" nillable="true" type="xsd:boolean" />
+              <xsd:element minOccurs="0" name="MaximumPermissionsSelectFilesFromSalesforce" nillable="true"
+                           type="xsd:boolean" />
+              <xsd:element minOccurs="0" name="MaximumPermissionsSendAnnouncementEmails" nillable="true"
+                           type="xsd:boolean" />
               <xsd:element minOccurs="0" name="MaximumPermissionsSendSitRequests" nillable="true" type="xsd:boolean" />
-              <xsd:element minOccurs="0" name="MaximumPermissionsShareInternalArticles" nillable="true" type="xsd:boolean" />
-              <xsd:element minOccurs="0" name="MaximumPermissionsShowCompanyNameAsUserBadge" nillable="true" type="xsd:boolean" />
+              <xsd:element minOccurs="0" name="MaximumPermissionsShareInternalArticles" nillable="true"
+                           type="xsd:boolean" />
+              <xsd:element minOccurs="0" name="MaximumPermissionsShowCompanyNameAsUserBadge" nillable="true"
+                           type="xsd:boolean" />
               <xsd:element minOccurs="0" name="MaximumPermissionsSolutionImport" nillable="true" type="xsd:boolean" />
-              <xsd:element minOccurs="0" name="MaximumPermissionsSubmitMacrosAllowed" nillable="true" type="xsd:boolean" />
-              <xsd:element minOccurs="0" name="MaximumPermissionsSubscribeReportToOtherUsers" nillable="true" type="xsd:boolean" />
-              <xsd:element minOccurs="0" name="MaximumPermissionsSubscribeReportsRunAsUser" nillable="true" type="xsd:boolean" />
-              <xsd:element minOccurs="0" name="MaximumPermissionsSubscribeToLightningReports" nillable="true" type="xsd:boolean" />
+              <xsd:element minOccurs="0" name="MaximumPermissionsSubmitMacrosAllowed" nillable="true"
+                           type="xsd:boolean" />
+              <xsd:element minOccurs="0" name="MaximumPermissionsSubscribeReportToOtherUsers" nillable="true"
+                           type="xsd:boolean" />
+              <xsd:element minOccurs="0" name="MaximumPermissionsSubscribeReportsRunAsUser" nillable="true"
+                           type="xsd:boolean" />
+              <xsd:element minOccurs="0" name="MaximumPermissionsSubscribeToLightningReports" nillable="true"
+                           type="xsd:boolean" />
               <xsd:element minOccurs="0" name="MaximumPermissionsTransferAnyCase" nillable="true" type="xsd:boolean" />
               <xsd:element minOccurs="0" name="MaximumPermissionsTransferAnyEntity" nillable="true" type="xsd:boolean" />
               <xsd:element minOccurs="0" name="MaximumPermissionsTransferAnyLead" nillable="true" type="xsd:boolean" />
               <xsd:element minOccurs="0" name="MaximumPermissionsTwoFactorApi" nillable="true" type="xsd:boolean" />
-              <xsd:element minOccurs="0" name="MaximumPermissionsUseTeamReassignWizards" nillable="true" type="xsd:boolean" />
+              <xsd:element minOccurs="0" name="MaximumPermissionsUseTeamReassignWizards" nillable="true"
+                           type="xsd:boolean" />
               <xsd:element minOccurs="0" name="MaximumPermissionsViewAllActivities" nillable="true" type="xsd:boolean" />
               <xsd:element minOccurs="0" name="MaximumPermissionsViewAllData" nillable="true" type="xsd:boolean" />
               <xsd:element minOccurs="0" name="MaximumPermissionsViewAllUsers" nillable="true" type="xsd:boolean" />
@@ -7372,11 +7477,14 @@
               <xsd:element minOccurs="0" name="MaximumPermissionsViewEventLogFiles" nillable="true" type="xsd:boolean" />
               <xsd:element minOccurs="0" name="MaximumPermissionsViewHealthCheck" nillable="true" type="xsd:boolean" />
               <xsd:element minOccurs="0" name="MaximumPermissionsViewHelpLink" nillable="true" type="xsd:boolean" />
-              <xsd:element minOccurs="0" name="MaximumPermissionsViewMyTeamsDashboards" nillable="true" type="xsd:boolean" />
-              <xsd:element minOccurs="0" name="MaximumPermissionsViewPublicDashboards" nillable="true" type="xsd:boolean" />
+              <xsd:element minOccurs="0" name="MaximumPermissionsViewMyTeamsDashboards" nillable="true"
+                           type="xsd:boolean" />
+              <xsd:element minOccurs="0" name="MaximumPermissionsViewPublicDashboards" nillable="true"
+                           type="xsd:boolean" />
               <xsd:element minOccurs="0" name="MaximumPermissionsViewPublicReports" nillable="true" type="xsd:boolean" />
               <xsd:element minOccurs="0" name="MaximumPermissionsViewSetup" nillable="true" type="xsd:boolean" />
-              <xsd:element minOccurs="0" name="MaximumPermissionsWorkCalibrationUser" nillable="true" type="xsd:boolean" />
+              <xsd:element minOccurs="0" name="MaximumPermissionsWorkCalibrationUser" nillable="true"
+                           type="xsd:boolean" />
               <xsd:element minOccurs="0" name="MaximumPermissionsWorkDotComUserPerm" nillable="true" type="xsd:boolean" />
               <xsd:element minOccurs="0" name="PermissionSetLicenseAssignments" nillable="true" type="tns:QueryResult" />
               <xsd:element minOccurs="0" name="PermissionSetLicenseKey" nillable="true" type="xsd:string" />
@@ -7497,7 +7605,8 @@
               <xsd:element minOccurs="0" name="LastModifiedBy" nillable="true" type="ens:User" />
               <xsd:element minOccurs="0" name="LastModifiedById" nillable="true" type="tns:ID" />
               <xsd:element minOccurs="0" name="LastModifiedDate" nillable="true" type="xsd:dateTime" />
-              <xsd:element minOccurs="0" name="PlatformCachePartition" nillable="true" type="ens:PlatformCachePartition" />
+              <xsd:element minOccurs="0" name="PlatformCachePartition" nillable="true"
+                           type="ens:PlatformCachePartition" />
               <xsd:element minOccurs="0" name="PlatformCachePartitionId" nillable="true" type="tns:ID" />
               <xsd:element minOccurs="0" name="SystemModstamp" nillable="true" type="xsd:dateTime" />
             </xsd:sequence>
@@ -7865,7 +7974,8 @@
               <xsd:element minOccurs="0" name="PermissionsAddDirectMessageMembers" nillable="true" type="xsd:boolean" />
               <xsd:element minOccurs="0" name="PermissionsAllowEmailIC" nillable="true" type="xsd:boolean" />
               <xsd:element minOccurs="0" name="PermissionsAllowUniversalSearch" nillable="true" type="xsd:boolean" />
-              <xsd:element minOccurs="0" name="PermissionsAllowViewEditConvertedLeads" nillable="true" type="xsd:boolean" />
+              <xsd:element minOccurs="0" name="PermissionsAllowViewEditConvertedLeads" nillable="true"
+                           type="xsd:boolean" />
               <xsd:element minOccurs="0" name="PermissionsAllowViewKnowledge" nillable="true" type="xsd:boolean" />
               <xsd:element minOccurs="0" name="PermissionsApiEnabled" nillable="true" type="xsd:boolean" />
               <xsd:element minOccurs="0" name="PermissionsAssignPermissionSets" nillable="true" type="xsd:boolean" />
@@ -7877,16 +7987,19 @@
               <xsd:element minOccurs="0" name="PermissionsCanApproveFeedPost" nillable="true" type="xsd:boolean" />
               <xsd:element minOccurs="0" name="PermissionsCanInsertFeedSystemFields" nillable="true" type="xsd:boolean" />
               <xsd:element minOccurs="0" name="PermissionsCanUseNewDashboardBuilder" nillable="true" type="xsd:boolean" />
-              <xsd:element minOccurs="0" name="PermissionsChatterComposeUiCodesnippet" nillable="true" type="xsd:boolean" />
+              <xsd:element minOccurs="0" name="PermissionsChatterComposeUiCodesnippet" nillable="true"
+                           type="xsd:boolean" />
               <xsd:element minOccurs="0" name="PermissionsChatterEditOwnPost" nillable="true" type="xsd:boolean" />
               <xsd:element minOccurs="0" name="PermissionsChatterEditOwnRecordPost" nillable="true" type="xsd:boolean" />
               <xsd:element minOccurs="0" name="PermissionsChatterFileLink" nillable="true" type="xsd:boolean" />
               <xsd:element minOccurs="0" name="PermissionsChatterForSharePoint" nillable="true" type="xsd:boolean" />
               <xsd:element minOccurs="0" name="PermissionsChatterInternalUser" nillable="true" type="xsd:boolean" />
-              <xsd:element minOccurs="0" name="PermissionsChatterInviteExternalUsers" nillable="true" type="xsd:boolean" />
+              <xsd:element minOccurs="0" name="PermissionsChatterInviteExternalUsers" nillable="true"
+                           type="xsd:boolean" />
               <xsd:element minOccurs="0" name="PermissionsChatterOwnGroups" nillable="true" type="xsd:boolean" />
               <xsd:element minOccurs="0" name="PermissionsConfigCustomRecs" nillable="true" type="xsd:boolean" />
-              <xsd:element minOccurs="0" name="PermissionsConnectOrgToEnvironmentHub" nillable="true" type="xsd:boolean" />
+              <xsd:element minOccurs="0" name="PermissionsConnectOrgToEnvironmentHub" nillable="true"
+                           type="xsd:boolean" />
               <xsd:element minOccurs="0" name="PermissionsContentAdministrator" nillable="true" type="xsd:boolean" />
               <xsd:element minOccurs="0" name="PermissionsContentWorkspaces" nillable="true" type="xsd:boolean" />
               <xsd:element minOccurs="0" name="PermissionsConvertLeads" nillable="true" type="xsd:boolean" />
@@ -7923,7 +8036,8 @@
               <xsd:element minOccurs="0" name="PermissionsEmailMass" nillable="true" type="xsd:boolean" />
               <xsd:element minOccurs="0" name="PermissionsEmailSingle" nillable="true" type="xsd:boolean" />
               <xsd:element minOccurs="0" name="PermissionsEmailTemplateManagement" nillable="true" type="xsd:boolean" />
-              <xsd:element minOccurs="0" name="PermissionsEnableCommunityAppLauncher" nillable="true" type="xsd:boolean" />
+              <xsd:element minOccurs="0" name="PermissionsEnableCommunityAppLauncher" nillable="true"
+                           type="xsd:boolean" />
               <xsd:element minOccurs="0" name="PermissionsEnableNotifications" nillable="true" type="xsd:boolean" />
               <xsd:element minOccurs="0" name="PermissionsExportReport" nillable="true" type="xsd:boolean" />
               <xsd:element minOccurs="0" name="PermissionsFlowUFLRequired" nillable="true" type="xsd:boolean" />
@@ -7936,11 +8050,13 @@
               <xsd:element minOccurs="0" name="PermissionsImportLeads" nillable="true" type="xsd:boolean" />
               <xsd:element minOccurs="0" name="PermissionsImportPersonal" nillable="true" type="xsd:boolean" />
               <xsd:element minOccurs="0" name="PermissionsInstallMultiforce" nillable="true" type="xsd:boolean" />
-              <xsd:element minOccurs="0" name="PermissionsLightningConsoleAllowedForUser" nillable="true" type="xsd:boolean" />
+              <xsd:element minOccurs="0" name="PermissionsLightningConsoleAllowedForUser" nillable="true"
+                           type="xsd:boolean" />
               <xsd:element minOccurs="0" name="PermissionsLightningExperienceUser" nillable="true" type="xsd:boolean" />
               <xsd:element minOccurs="0" name="PermissionsManageAnalyticSnapshots" nillable="true" type="xsd:boolean" />
               <xsd:element minOccurs="0" name="PermissionsManageAuthProviders" nillable="true" type="xsd:boolean" />
-              <xsd:element minOccurs="0" name="PermissionsManageBusinessHourHolidays" nillable="true" type="xsd:boolean" />
+              <xsd:element minOccurs="0" name="PermissionsManageBusinessHourHolidays" nillable="true"
+                           type="xsd:boolean" />
               <xsd:element minOccurs="0" name="PermissionsManageCallCenters" nillable="true" type="xsd:boolean" />
               <xsd:element minOccurs="0" name="PermissionsManageCases" nillable="true" type="xsd:boolean" />
               <xsd:element minOccurs="0" name="PermissionsManageCategories" nillable="true" type="xsd:boolean" />
@@ -7963,19 +8079,23 @@
               <xsd:element minOccurs="0" name="PermissionsManageInternalUsers" nillable="true" type="xsd:boolean" />
               <xsd:element minOccurs="0" name="PermissionsManageIpAddresses" nillable="true" type="xsd:boolean" />
               <xsd:element minOccurs="0" name="PermissionsManageKnowledge" nillable="true" type="xsd:boolean" />
-              <xsd:element minOccurs="0" name="PermissionsManageKnowledgeImportExport" nillable="true" type="xsd:boolean" />
+              <xsd:element minOccurs="0" name="PermissionsManageKnowledgeImportExport" nillable="true"
+                           type="xsd:boolean" />
               <xsd:element minOccurs="0" name="PermissionsManageLeads" nillable="true" type="xsd:boolean" />
               <xsd:element minOccurs="0" name="PermissionsManageLoginAccessPolicies" nillable="true" type="xsd:boolean" />
               <xsd:element minOccurs="0" name="PermissionsManageMobile" nillable="true" type="xsd:boolean" />
               <xsd:element minOccurs="0" name="PermissionsManageNetworks" nillable="true" type="xsd:boolean" />
               <xsd:element minOccurs="0" name="PermissionsManagePasswordPolicies" nillable="true" type="xsd:boolean" />
-              <xsd:element minOccurs="0" name="PermissionsManageProfilesPermissionsets" nillable="true" type="xsd:boolean" />
+              <xsd:element minOccurs="0" name="PermissionsManageProfilesPermissionsets" nillable="true"
+                           type="xsd:boolean" />
               <xsd:element minOccurs="0" name="PermissionsManagePvtRptsAndDashbds" nillable="true" type="xsd:boolean" />
               <xsd:element minOccurs="0" name="PermissionsManageRemoteAccess" nillable="true" type="xsd:boolean" />
               <xsd:element minOccurs="0" name="PermissionsManageReportsInPubFolders" nillable="true" type="xsd:boolean" />
               <xsd:element minOccurs="0" name="PermissionsManageRoles" nillable="true" type="xsd:boolean" />
-              <xsd:element minOccurs="0" name="PermissionsManageSearchPromotionRules" nillable="true" type="xsd:boolean" />
-              <xsd:element minOccurs="0" name="PermissionsManageSessionPermissionSets" nillable="true" type="xsd:boolean" />
+              <xsd:element minOccurs="0" name="PermissionsManageSearchPromotionRules" nillable="true"
+                           type="xsd:boolean" />
+              <xsd:element minOccurs="0" name="PermissionsManageSessionPermissionSets" nillable="true"
+                           type="xsd:boolean" />
               <xsd:element minOccurs="0" name="PermissionsManageSharing" nillable="true" type="xsd:boolean" />
               <xsd:element minOccurs="0" name="PermissionsManageSolutions" nillable="true" type="xsd:boolean" />
               <xsd:element minOccurs="0" name="PermissionsManageSynonyms" nillable="true" type="xsd:boolean" />
@@ -7992,7 +8112,8 @@
               <xsd:element minOccurs="0" name="PermissionsPasswordNeverExpires" nillable="true" type="xsd:boolean" />
               <xsd:element minOccurs="0" name="PermissionsPreventClassicExperience" nillable="true" type="xsd:boolean" />
               <xsd:element minOccurs="0" name="PermissionsPublishMultiforce" nillable="true" type="xsd:boolean" />
-              <xsd:element minOccurs="0" name="PermissionsRemoveDirectMessageMembers" nillable="true" type="xsd:boolean" />
+              <xsd:element minOccurs="0" name="PermissionsRemoveDirectMessageMembers" nillable="true"
+                           type="xsd:boolean" />
               <xsd:element minOccurs="0" name="PermissionsResetPasswords" nillable="true" type="xsd:boolean" />
               <xsd:element minOccurs="0" name="PermissionsRunFlow" nillable="true" type="xsd:boolean" />
               <xsd:element minOccurs="0" name="PermissionsRunReports" nillable="true" type="xsd:boolean" />
@@ -8002,12 +8123,15 @@
               <xsd:element minOccurs="0" name="PermissionsSendAnnouncementEmails" nillable="true" type="xsd:boolean" />
               <xsd:element minOccurs="0" name="PermissionsSendSitRequests" nillable="true" type="xsd:boolean" />
               <xsd:element minOccurs="0" name="PermissionsShareInternalArticles" nillable="true" type="xsd:boolean" />
-              <xsd:element minOccurs="0" name="PermissionsShowCompanyNameAsUserBadge" nillable="true" type="xsd:boolean" />
+              <xsd:element minOccurs="0" name="PermissionsShowCompanyNameAsUserBadge" nillable="true"
+                           type="xsd:boolean" />
               <xsd:element minOccurs="0" name="PermissionsSolutionImport" nillable="true" type="xsd:boolean" />
               <xsd:element minOccurs="0" name="PermissionsSubmitMacrosAllowed" nillable="true" type="xsd:boolean" />
-              <xsd:element minOccurs="0" name="PermissionsSubscribeReportToOtherUsers" nillable="true" type="xsd:boolean" />
+              <xsd:element minOccurs="0" name="PermissionsSubscribeReportToOtherUsers" nillable="true"
+                           type="xsd:boolean" />
               <xsd:element minOccurs="0" name="PermissionsSubscribeReportsRunAsUser" nillable="true" type="xsd:boolean" />
-              <xsd:element minOccurs="0" name="PermissionsSubscribeToLightningReports" nillable="true" type="xsd:boolean" />
+              <xsd:element minOccurs="0" name="PermissionsSubscribeToLightningReports" nillable="true"
+                           type="xsd:boolean" />
               <xsd:element minOccurs="0" name="PermissionsTransferAnyCase" nillable="true" type="xsd:boolean" />
               <xsd:element minOccurs="0" name="PermissionsTransferAnyEntity" nillable="true" type="xsd:boolean" />
               <xsd:element minOccurs="0" name="PermissionsTransferAnyLead" nillable="true" type="xsd:boolean" />
@@ -8341,7 +8465,8 @@
         <xsd:complexContent mixed="false">
           <xsd:extension base="ens:sObject">
             <xsd:sequence>
-              <xsd:element minOccurs="0" name="ButtonsDisplayed" nillable="true" type="tns:SearchLayoutButtonsDisplayed" />
+              <xsd:element minOccurs="0" name="ButtonsDisplayed" nillable="true"
+                           type="tns:SearchLayoutButtonsDisplayed" />
               <xsd:element minOccurs="0" name="DurableId" nillable="true" type="xsd:string" />
               <xsd:element minOccurs="0" name="EntityDefinition" nillable="true" type="ens:EntityDefinition" />
               <xsd:element minOccurs="0" name="EntityDefinitionId" nillable="true" type="xsd:string" />
@@ -9325,81 +9450,126 @@
               <xsd:element minOccurs="0" name="UserPermissionsMobileUser" nillable="true" type="xsd:boolean" />
               <xsd:element minOccurs="0" name="UserPermissionsOfflineUser" nillable="true" type="xsd:boolean" />
               <xsd:element minOccurs="0" name="UserPermissionsSFContentUser" nillable="true" type="xsd:boolean" />
-              <xsd:element minOccurs="0" name="UserPermissionsSiteforceContributorUser" nillable="true" type="xsd:boolean" />
-              <xsd:element minOccurs="0" name="UserPermissionsSiteforcePublisherUser" nillable="true" type="xsd:boolean" />
+              <xsd:element minOccurs="0" name="UserPermissionsSiteforceContributorUser" nillable="true"
+                           type="xsd:boolean" />
+              <xsd:element minOccurs="0" name="UserPermissionsSiteforcePublisherUser" nillable="true"
+                           type="xsd:boolean" />
               <xsd:element minOccurs="0" name="UserPermissionsSupportUser" nillable="true" type="xsd:boolean" />
               <xsd:element minOccurs="0" name="UserPermissionsWorkDotComUserFeature" nillable="true" type="xsd:boolean" />
               <xsd:element minOccurs="0" name="UserPreferences" nillable="true" type="tns:QueryResult" />
-              <xsd:element minOccurs="0" name="UserPreferencesActivityRemindersPopup" nillable="true" type="xsd:boolean" />
-              <xsd:element minOccurs="0" name="UserPreferencesApexPagesDeveloperMode" nillable="true" type="xsd:boolean" />
+              <xsd:element minOccurs="0" name="UserPreferencesActivityRemindersPopup" nillable="true"
+                           type="xsd:boolean" />
+              <xsd:element minOccurs="0" name="UserPreferencesApexPagesDeveloperMode" nillable="true"
+                           type="xsd:boolean" />
               <xsd:element minOccurs="0" name="UserPreferencesCacheDiagnostics" nillable="true" type="xsd:boolean" />
               <xsd:element minOccurs="0" name="UserPreferencesContentEmailAsAndWhen" nillable="true" type="xsd:boolean" />
               <xsd:element minOccurs="0" name="UserPreferencesContentNoEmail" nillable="true" type="xsd:boolean" />
               <xsd:element minOccurs="0" name="UserPreferencesCreateLEXAppsWTShown" nillable="true" type="xsd:boolean" />
-              <xsd:element minOccurs="0" name="UserPreferencesDisCommentAfterLikeEmail" nillable="true" type="xsd:boolean" />
-              <xsd:element minOccurs="0" name="UserPreferencesDisMentionsCommentEmail" nillable="true" type="xsd:boolean" />
-              <xsd:element minOccurs="0" name="UserPreferencesDisProfPostCommentEmail" nillable="true" type="xsd:boolean" />
+              <xsd:element minOccurs="0" name="UserPreferencesDisCommentAfterLikeEmail" nillable="true"
+                           type="xsd:boolean" />
+              <xsd:element minOccurs="0" name="UserPreferencesDisMentionsCommentEmail" nillable="true"
+                           type="xsd:boolean" />
+              <xsd:element minOccurs="0" name="UserPreferencesDisProfPostCommentEmail" nillable="true"
+                           type="xsd:boolean" />
               <xsd:element minOccurs="0" name="UserPreferencesDisableAllFeedsEmail" nillable="true" type="xsd:boolean" />
               <xsd:element minOccurs="0" name="UserPreferencesDisableBookmarkEmail" nillable="true" type="xsd:boolean" />
-              <xsd:element minOccurs="0" name="UserPreferencesDisableChangeCommentEmail" nillable="true" type="xsd:boolean" />
-              <xsd:element minOccurs="0" name="UserPreferencesDisableEndorsementEmail" nillable="true" type="xsd:boolean" />
+              <xsd:element minOccurs="0" name="UserPreferencesDisableChangeCommentEmail" nillable="true"
+                           type="xsd:boolean" />
+              <xsd:element minOccurs="0" name="UserPreferencesDisableEndorsementEmail" nillable="true"
+                           type="xsd:boolean" />
               <xsd:element minOccurs="0" name="UserPreferencesDisableFeedbackEmail" nillable="true" type="xsd:boolean" />
-              <xsd:element minOccurs="0" name="UserPreferencesDisableFileShareNotificationsForApi" nillable="true" type="xsd:boolean" />
+              <xsd:element minOccurs="0" name="UserPreferencesDisableFileShareNotificationsForApi" nillable="true"
+                           type="xsd:boolean" />
               <xsd:element minOccurs="0" name="UserPreferencesDisableFollowersEmail" nillable="true" type="xsd:boolean" />
-              <xsd:element minOccurs="0" name="UserPreferencesDisableLaterCommentEmail" nillable="true" type="xsd:boolean" />
+              <xsd:element minOccurs="0" name="UserPreferencesDisableLaterCommentEmail" nillable="true"
+                           type="xsd:boolean" />
               <xsd:element minOccurs="0" name="UserPreferencesDisableLikeEmail" nillable="true" type="xsd:boolean" />
-              <xsd:element minOccurs="0" name="UserPreferencesDisableMentionsPostEmail" nillable="true" type="xsd:boolean" />
+              <xsd:element minOccurs="0" name="UserPreferencesDisableMentionsPostEmail" nillable="true"
+                           type="xsd:boolean" />
               <xsd:element minOccurs="0" name="UserPreferencesDisableMessageEmail" nillable="true" type="xsd:boolean" />
-              <xsd:element minOccurs="0" name="UserPreferencesDisableProfilePostEmail" nillable="true" type="xsd:boolean" />
+              <xsd:element minOccurs="0" name="UserPreferencesDisableProfilePostEmail" nillable="true"
+                           type="xsd:boolean" />
               <xsd:element minOccurs="0" name="UserPreferencesDisableSharePostEmail" nillable="true" type="xsd:boolean" />
               <xsd:element minOccurs="0" name="UserPreferencesDisableWorkEmail" nillable="true" type="xsd:boolean" />
               <xsd:element minOccurs="0" name="UserPreferencesEnableAutoSubForFeeds" nillable="true" type="xsd:boolean" />
-              <xsd:element minOccurs="0" name="UserPreferencesEventRemindersCheckboxDefault" nillable="true" type="xsd:boolean" />
-              <xsd:element minOccurs="0" name="UserPreferencesFavoritesShowTopFavorites" nillable="true" type="xsd:boolean" />
+              <xsd:element minOccurs="0" name="UserPreferencesEventRemindersCheckboxDefault" nillable="true"
+                           type="xsd:boolean" />
+              <xsd:element minOccurs="0" name="UserPreferencesFavoritesShowTopFavorites" nillable="true"
+                           type="xsd:boolean" />
               <xsd:element minOccurs="0" name="UserPreferencesFavoritesWTShown" nillable="true" type="xsd:boolean" />
               <xsd:element minOccurs="0" name="UserPreferencesGlobalNavBarWTShown" nillable="true" type="xsd:boolean" />
-              <xsd:element minOccurs="0" name="UserPreferencesGlobalNavGridMenuWTShown" nillable="true" type="xsd:boolean" />
-              <xsd:element minOccurs="0" name="UserPreferencesHideBiggerPhotoCallout" nillable="true" type="xsd:boolean" />
+              <xsd:element minOccurs="0" name="UserPreferencesGlobalNavGridMenuWTShown" nillable="true"
+                           type="xsd:boolean" />
+              <xsd:element minOccurs="0" name="UserPreferencesHideBiggerPhotoCallout" nillable="true"
+                           type="xsd:boolean" />
               <xsd:element minOccurs="0" name="UserPreferencesHideCSNDesktopTask" nillable="true" type="xsd:boolean" />
-              <xsd:element minOccurs="0" name="UserPreferencesHideCSNGetChatterMobileTask" nillable="true" type="xsd:boolean" />
-              <xsd:element minOccurs="0" name="UserPreferencesHideChatterOnboardingSplash" nillable="true" type="xsd:boolean" />
-              <xsd:element minOccurs="0" name="UserPreferencesHideEndUserOnboardingAssistantModal" nillable="true" type="xsd:boolean" />
-              <xsd:element minOccurs="0" name="UserPreferencesHideLightningMigrationModal" nillable="true" type="xsd:boolean" />
+              <xsd:element minOccurs="0" name="UserPreferencesHideCSNGetChatterMobileTask" nillable="true"
+                           type="xsd:boolean" />
+              <xsd:element minOccurs="0" name="UserPreferencesHideChatterOnboardingSplash" nillable="true"
+                           type="xsd:boolean" />
+              <xsd:element minOccurs="0" name="UserPreferencesHideEndUserOnboardingAssistantModal" nillable="true"
+                           type="xsd:boolean" />
+              <xsd:element minOccurs="0" name="UserPreferencesHideLightningMigrationModal" nillable="true"
+                           type="xsd:boolean" />
               <xsd:element minOccurs="0" name="UserPreferencesHideS1BrowserUI" nillable="true" type="xsd:boolean" />
-              <xsd:element minOccurs="0" name="UserPreferencesHideSecondChatterOnboardingSplash" nillable="true" type="xsd:boolean" />
+              <xsd:element minOccurs="0" name="UserPreferencesHideSecondChatterOnboardingSplash" nillable="true"
+                           type="xsd:boolean" />
               <xsd:element minOccurs="0" name="UserPreferencesHideSfxWelcomeMat" nillable="true" type="xsd:boolean" />
               <xsd:element minOccurs="0" name="UserPreferencesJigsawListUser" nillable="true" type="xsd:boolean" />
-              <xsd:element minOccurs="0" name="UserPreferencesLightningExperiencePreferred" nillable="true" type="xsd:boolean" />
-              <xsd:element minOccurs="0" name="UserPreferencesPathAssistantCollapsed" nillable="true" type="xsd:boolean" />
+              <xsd:element minOccurs="0" name="UserPreferencesLightningExperiencePreferred" nillable="true"
+                           type="xsd:boolean" />
+              <xsd:element minOccurs="0" name="UserPreferencesPathAssistantCollapsed" nillable="true"
+                           type="xsd:boolean" />
               <xsd:element minOccurs="0" name="UserPreferencesPreviewLightning" nillable="true" type="xsd:boolean" />
-              <xsd:element minOccurs="0" name="UserPreferencesRecordHomeReservedWTShown" nillable="true" type="xsd:boolean" />
-              <xsd:element minOccurs="0" name="UserPreferencesRecordHomeSectionCollapseWTShown" nillable="true" type="xsd:boolean" />
+              <xsd:element minOccurs="0" name="UserPreferencesRecordHomeReservedWTShown" nillable="true"
+                           type="xsd:boolean" />
+              <xsd:element minOccurs="0" name="UserPreferencesRecordHomeSectionCollapseWTShown" nillable="true"
+                           type="xsd:boolean" />
               <xsd:element minOccurs="0" name="UserPreferencesReminderSoundOff" nillable="true" type="xsd:boolean" />
-              <xsd:element minOccurs="0" name="UserPreferencesShowCityToExternalUsers" nillable="true" type="xsd:boolean" />
+              <xsd:element minOccurs="0" name="UserPreferencesShowCityToExternalUsers" nillable="true"
+                           type="xsd:boolean" />
               <xsd:element minOccurs="0" name="UserPreferencesShowCityToGuestUsers" nillable="true" type="xsd:boolean" />
-              <xsd:element minOccurs="0" name="UserPreferencesShowCountryToExternalUsers" nillable="true" type="xsd:boolean" />
-              <xsd:element minOccurs="0" name="UserPreferencesShowCountryToGuestUsers" nillable="true" type="xsd:boolean" />
-              <xsd:element minOccurs="0" name="UserPreferencesShowEmailToExternalUsers" nillable="true" type="xsd:boolean" />
+              <xsd:element minOccurs="0" name="UserPreferencesShowCountryToExternalUsers" nillable="true"
+                           type="xsd:boolean" />
+              <xsd:element minOccurs="0" name="UserPreferencesShowCountryToGuestUsers" nillable="true"
+                           type="xsd:boolean" />
+              <xsd:element minOccurs="0" name="UserPreferencesShowEmailToExternalUsers" nillable="true"
+                           type="xsd:boolean" />
               <xsd:element minOccurs="0" name="UserPreferencesShowEmailToGuestUsers" nillable="true" type="xsd:boolean" />
-              <xsd:element minOccurs="0" name="UserPreferencesShowFaxToExternalUsers" nillable="true" type="xsd:boolean" />
+              <xsd:element minOccurs="0" name="UserPreferencesShowFaxToExternalUsers" nillable="true"
+                           type="xsd:boolean" />
               <xsd:element minOccurs="0" name="UserPreferencesShowFaxToGuestUsers" nillable="true" type="xsd:boolean" />
-              <xsd:element minOccurs="0" name="UserPreferencesShowManagerToExternalUsers" nillable="true" type="xsd:boolean" />
-              <xsd:element minOccurs="0" name="UserPreferencesShowManagerToGuestUsers" nillable="true" type="xsd:boolean" />
-              <xsd:element minOccurs="0" name="UserPreferencesShowMobilePhoneToExternalUsers" nillable="true" type="xsd:boolean" />
-              <xsd:element minOccurs="0" name="UserPreferencesShowMobilePhoneToGuestUsers" nillable="true" type="xsd:boolean" />
-              <xsd:element minOccurs="0" name="UserPreferencesShowPostalCodeToExternalUsers" nillable="true" type="xsd:boolean" />
-              <xsd:element minOccurs="0" name="UserPreferencesShowPostalCodeToGuestUsers" nillable="true" type="xsd:boolean" />
-              <xsd:element minOccurs="0" name="UserPreferencesShowProfilePicToGuestUsers" nillable="true" type="xsd:boolean" />
-              <xsd:element minOccurs="0" name="UserPreferencesShowStateToExternalUsers" nillable="true" type="xsd:boolean" />
+              <xsd:element minOccurs="0" name="UserPreferencesShowManagerToExternalUsers" nillable="true"
+                           type="xsd:boolean" />
+              <xsd:element minOccurs="0" name="UserPreferencesShowManagerToGuestUsers" nillable="true"
+                           type="xsd:boolean" />
+              <xsd:element minOccurs="0" name="UserPreferencesShowMobilePhoneToExternalUsers" nillable="true"
+                           type="xsd:boolean" />
+              <xsd:element minOccurs="0" name="UserPreferencesShowMobilePhoneToGuestUsers" nillable="true"
+                           type="xsd:boolean" />
+              <xsd:element minOccurs="0" name="UserPreferencesShowPostalCodeToExternalUsers" nillable="true"
+                           type="xsd:boolean" />
+              <xsd:element minOccurs="0" name="UserPreferencesShowPostalCodeToGuestUsers" nillable="true"
+                           type="xsd:boolean" />
+              <xsd:element minOccurs="0" name="UserPreferencesShowProfilePicToGuestUsers" nillable="true"
+                           type="xsd:boolean" />
+              <xsd:element minOccurs="0" name="UserPreferencesShowStateToExternalUsers" nillable="true"
+                           type="xsd:boolean" />
               <xsd:element minOccurs="0" name="UserPreferencesShowStateToGuestUsers" nillable="true" type="xsd:boolean" />
-              <xsd:element minOccurs="0" name="UserPreferencesShowStreetAddressToExternalUsers" nillable="true" type="xsd:boolean" />
-              <xsd:element minOccurs="0" name="UserPreferencesShowStreetAddressToGuestUsers" nillable="true" type="xsd:boolean" />
-              <xsd:element minOccurs="0" name="UserPreferencesShowTitleToExternalUsers" nillable="true" type="xsd:boolean" />
+              <xsd:element minOccurs="0" name="UserPreferencesShowStreetAddressToExternalUsers" nillable="true"
+                           type="xsd:boolean" />
+              <xsd:element minOccurs="0" name="UserPreferencesShowStreetAddressToGuestUsers" nillable="true"
+                           type="xsd:boolean" />
+              <xsd:element minOccurs="0" name="UserPreferencesShowTitleToExternalUsers" nillable="true"
+                           type="xsd:boolean" />
               <xsd:element minOccurs="0" name="UserPreferencesShowTitleToGuestUsers" nillable="true" type="xsd:boolean" />
-              <xsd:element minOccurs="0" name="UserPreferencesShowWorkPhoneToExternalUsers" nillable="true" type="xsd:boolean" />
-              <xsd:element minOccurs="0" name="UserPreferencesShowWorkPhoneToGuestUsers" nillable="true" type="xsd:boolean" />
+              <xsd:element minOccurs="0" name="UserPreferencesShowWorkPhoneToExternalUsers" nillable="true"
+                           type="xsd:boolean" />
+              <xsd:element minOccurs="0" name="UserPreferencesShowWorkPhoneToGuestUsers" nillable="true"
+                           type="xsd:boolean" />
               <xsd:element minOccurs="0" name="UserPreferencesSortFeedByComment" nillable="true" type="xsd:boolean" />
-              <xsd:element minOccurs="0" name="UserPreferencesTaskRemindersCheckboxDefault" nillable="true" type="xsd:boolean" />
+              <xsd:element minOccurs="0" name="UserPreferencesTaskRemindersCheckboxDefault" nillable="true"
+                           type="xsd:boolean" />
               <xsd:element minOccurs="0" name="UserRole" nillable="true" type="ens:UserRole" />
               <xsd:element minOccurs="0" name="UserRoleId" nillable="true" type="tns:ID" />
               <xsd:element minOccurs="0" name="UserSites" nillable="true" type="tns:QueryResult" />
@@ -9798,7 +9968,8 @@
               <xsd:element minOccurs="0" name="SystemModstamp" nillable="true" type="xsd:dateTime" />
               <xsd:element minOccurs="0" name="User" nillable="true" type="ens:User" />
               <xsd:element minOccurs="0" name="UserId" nillable="true" type="tns:ID" />
-              <xsd:element minOccurs="0" name="UserProvisioningRequest" nillable="true" type="ens:UserProvisioningRequest" />
+              <xsd:element minOccurs="0" name="UserProvisioningRequest" nillable="true"
+                           type="ens:UserProvisioningRequest" />
               <xsd:element minOccurs="0" name="UserProvisioningRequestId" nillable="true" type="tns:ID" />
               <xsd:element minOccurs="0" name="UserRecordAccess" nillable="true" type="ens:UserRecordAccess" />
             </xsd:sequence>
@@ -10025,7 +10196,8 @@
         </xsd:complexContent>
       </xsd:complexType>
     </xsd:schema>
-    <xsd:schema xmlns="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" targetNamespace="urn:enterprise.soap.sforce.com">
+    <xsd:schema xmlns="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified"
+                targetNamespace="urn:enterprise.soap.sforce.com">
       <xsd:import namespace="urn:sobject.enterprise.soap.sforce.com" />
       <xsd:simpleType name="ID">
         <xsd:restriction base="xsd:string">
@@ -10070,7 +10242,8 @@
         <xsd:sequence>
           <xsd:element minOccurs="1" maxOccurs="1" name="queryId" type="xsd:string" />
           <xsd:element minOccurs="0" maxOccurs="unbounded" name="searchRecords" type="tns:SearchRecord" />
-          <xsd:element minOccurs="0" maxOccurs="1" name="searchResultsMetadata" nillable="true" type="tns:SearchResultsMetadata" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="searchResultsMetadata" nillable="true"
+                       type="tns:SearchResultsMetadata" />
         </xsd:sequence>
       </xsd:complexType>
       <xsd:complexType name="SearchRecord">
@@ -10107,7 +10280,8 @@
         <xsd:sequence>
           <xsd:element minOccurs="1" maxOccurs="1" name="entityName" type="xsd:string" />
           <xsd:element minOccurs="0" maxOccurs="unbounded" name="fieldMetadata" type="tns:FieldLevelSearchMetadata" />
-          <xsd:element minOccurs="0" maxOccurs="1" name="spellCorrectionMetadata" type="tns:EntitySpellCorrectionMetadata" />
+          <xsd:element minOccurs="0" maxOccurs="1" name="spellCorrectionMetadata"
+                       type="tns:EntitySpellCorrectionMetadata" />
         </xsd:sequence>
       </xsd:complexType>
       <xsd:complexType name="FieldLevelSearchMetadata">
@@ -11859,7 +12033,8 @@
       </xsd:complexType>
       <xsd:complexType name="Error">
         <xsd:sequence>
-          <xsd:element minOccurs="0" maxOccurs="unbounded" name="extendedErrorDetails" nillable="true" type="tns:ExtendedErrorDetails" />
+          <xsd:element minOccurs="0" maxOccurs="unbounded" name="extendedErrorDetails" nillable="true"
+                       type="tns:ExtendedErrorDetails" />
           <xsd:element minOccurs="0" maxOccurs="unbounded" name="fields" nillable="true" type="xsd:string" />
           <xsd:element name="message" type="xsd:string" />
           <xsd:element name="statusCode" type="tns:StatusCode" />
@@ -11917,7 +12092,8 @@
       </xsd:complexType>
       <xsd:complexType name="MergeRequest">
         <xsd:sequence>
-          <xsd:element minOccurs="0" maxOccurs="unbounded" name="additionalInformationMap" type="tns:AdditionalInformationMap" />
+          <xsd:element minOccurs="0" maxOccurs="unbounded" name="additionalInformationMap"
+                       type="tns:AdditionalInformationMap" />
           <xsd:element name="masterRecord" type="ens:sObject" />
           <xsd:element minOccurs="1" maxOccurs="unbounded" name="recordToMergeIds" type="tns:ID" />
         </xsd:sequence>
@@ -11982,7 +12158,8 @@
           <xsd:element name="canvasApplicationName" nillable="true" type="xsd:string" />
           <xsd:element minOccurs="0" maxOccurs="unbounded" name="colors" type="tns:DescribeColor" />
           <xsd:element name="contextSobjectType" nillable="true" type="xsd:string" />
-          <xsd:element minOccurs="0" maxOccurs="unbounded" name="defaultValues" nillable="true" type="tns:DescribeQuickActionDefaultValue" />
+          <xsd:element minOccurs="0" maxOccurs="unbounded" name="defaultValues" nillable="true"
+                       type="tns:DescribeQuickActionDefaultValue" />
           <xsd:element name="height" nillable="true" type="xsd:int" />
           <xsd:element name="iconName" nillable="true" type="xsd:string" />
           <xsd:element name="iconUrl" nillable="true" type="xsd:string" />
@@ -12081,7 +12258,8 @@
       </xsd:complexType>
       <xsd:complexType name="DescribeSObjectResult">
         <xsd:sequence>
-          <xsd:element minOccurs="0" maxOccurs="unbounded" name="actionOverrides" nillable="true" type="tns:ActionOverride" />
+          <xsd:element minOccurs="0" maxOccurs="unbounded" name="actionOverrides" nillable="true"
+                       type="tns:ActionOverride" />
           <xsd:element name="activateable" type="xsd:boolean" />
           <xsd:element minOccurs="0" maxOccurs="unbounded" name="childRelationships" type="tns:ChildRelationship" />
           <xsd:element name="compactLayoutable" type="xsd:boolean" />
@@ -12276,7 +12454,8 @@
           <xsd:element minOccurs="0" name="namePointing" type="xsd:boolean" />
           <xsd:element name="nillable" type="xsd:boolean" />
           <xsd:element name="permissionable" type="xsd:boolean" />
-          <xsd:element minOccurs="0" maxOccurs="unbounded" name="picklistValues" nillable="true" type="tns:PicklistEntry" />
+          <xsd:element minOccurs="0" maxOccurs="unbounded" name="picklistValues" nillable="true"
+                       type="tns:PicklistEntry" />
           <xsd:element name="polymorphicForeignKey" type="xsd:boolean" />
           <xsd:element name="precision" type="xsd:int" />
           <xsd:element name="queryByDistance" type="xsd:boolean" />
@@ -12371,7 +12550,8 @@
       </xsd:complexType>
       <xsd:complexType name="MatchRecord">
         <xsd:sequence>
-          <xsd:element minOccurs="0" maxOccurs="unbounded" name="additionalInformation" type="tns:AdditionalInformationMap" />
+          <xsd:element minOccurs="0" maxOccurs="unbounded" name="additionalInformation"
+                       type="tns:AdditionalInformationMap" />
           <xsd:element minOccurs="0" maxOccurs="unbounded" name="fieldDiffs" type="tns:FieldDiff" />
           <xsd:element name="matchConfidence" type="xsd:double" />
           <xsd:element name="record" type="ens:sObject" />
@@ -12566,9 +12746,11 @@
       </xsd:complexType>
       <xsd:complexType name="DescribeSoftphoneLayoutCallType">
         <xsd:sequence>
-          <xsd:element minOccurs="1" maxOccurs="unbounded" name="infoFields" type="tns:DescribeSoftphoneLayoutInfoField" />
+          <xsd:element minOccurs="1" maxOccurs="unbounded" name="infoFields"
+                       type="tns:DescribeSoftphoneLayoutInfoField" />
           <xsd:element name="name" type="xsd:string" />
-          <xsd:element minOccurs="0" maxOccurs="unbounded" name="screenPopOptions" type="tns:DescribeSoftphoneScreenPopOption" />
+          <xsd:element minOccurs="0" maxOccurs="unbounded" name="screenPopOptions"
+                       type="tns:DescribeSoftphoneScreenPopOption" />
           <xsd:element minOccurs="0" name="screenPopsOpenWithin" type="xsd:string" />
           <xsd:element minOccurs="0" maxOccurs="unbounded" name="sections" type="tns:DescribeSoftphoneLayoutSection" />
         </xsd:sequence>
@@ -12600,7 +12782,8 @@
         <xsd:sequence>
           <xsd:element minOccurs="1" maxOccurs="unbounded" name="compactLayouts" type="tns:DescribeCompactLayout" />
           <xsd:element name="defaultCompactLayoutId" type="tns:ID" />
-          <xsd:element minOccurs="0" maxOccurs="unbounded" name="recordTypeCompactLayoutMappings" type="tns:RecordTypeCompactLayoutMapping" />
+          <xsd:element minOccurs="0" maxOccurs="unbounded" name="recordTypeCompactLayoutMappings"
+                       type="tns:RecordTypeCompactLayoutMapping" />
         </xsd:sequence>
       </xsd:complexType>
       <xsd:complexType name="DescribeCompactLayout">
@@ -12634,7 +12817,8 @@
           <xsd:element name="apiName" type="xsd:string" />
           <xsd:element name="label" type="xsd:string" />
           <xsd:element name="pathPicklistField" type="xsd:string" />
-          <xsd:element minOccurs="0" maxOccurs="unbounded" name="picklistsForRecordType" nillable="true" type="tns:PicklistForRecordType" />
+          <xsd:element minOccurs="0" maxOccurs="unbounded" name="picklistsForRecordType" nillable="true"
+                       type="tns:PicklistForRecordType" />
           <xsd:element name="recordTypeId" nillable="true" type="tns:ID" />
           <xsd:element minOccurs="0" maxOccurs="unbounded" name="steps" type="tns:DescribePathAssistantStep" />
         </xsd:sequence>
@@ -12695,7 +12879,8 @@
       </xsd:complexType>
       <xsd:complexType name="DescribeQuickActionListResult">
         <xsd:sequence>
-          <xsd:element minOccurs="0" maxOccurs="unbounded" name="quickActionListItems" type="tns:DescribeQuickActionListItemResult" />
+          <xsd:element minOccurs="0" maxOccurs="unbounded" name="quickActionListItems"
+                       type="tns:DescribeQuickActionListItemResult" />
         </xsd:sequence>
       </xsd:complexType>
       <xsd:complexType name="DescribeQuickActionListItemResult">
@@ -12966,19 +13151,22 @@
           <xsd:element name="layoutId" type="tns:ID" />
           <xsd:element name="master" type="xsd:boolean" />
           <xsd:element name="name" type="xsd:string" />
-          <xsd:element minOccurs="0" maxOccurs="unbounded" name="picklistsForRecordType" nillable="true" type="tns:PicklistForRecordType" />
+          <xsd:element minOccurs="0" maxOccurs="unbounded" name="picklistsForRecordType" nillable="true"
+                       type="tns:PicklistForRecordType" />
           <xsd:element name="recordTypeId" nillable="true" type="tns:ID" />
         </xsd:sequence>
       </xsd:complexType>
       <xsd:complexType name="PicklistForRecordType">
         <xsd:sequence>
           <xsd:element name="picklistName" type="xsd:string" />
-          <xsd:element minOccurs="0" maxOccurs="unbounded" name="picklistValues" nillable="true" type="tns:PicklistEntry" />
+          <xsd:element minOccurs="0" maxOccurs="unbounded" name="picklistValues" nillable="true"
+                       type="tns:PicklistEntry" />
         </xsd:sequence>
       </xsd:complexType>
       <xsd:complexType name="RelatedContent">
         <xsd:sequence>
-          <xsd:element minOccurs="1" maxOccurs="unbounded" name="relatedContentItems" type="tns:DescribeRelatedContentItem" />
+          <xsd:element minOccurs="1" maxOccurs="unbounded" name="relatedContentItems"
+                       type="tns:DescribeRelatedContentItem" />
         </xsd:sequence>
       </xsd:complexType>
       <xsd:complexType name="DescribeRelatedContentItem">
@@ -12989,7 +13177,8 @@
       <xsd:complexType name="RelatedList">
         <xsd:sequence>
           <xsd:element name="accessLevelRequiredForCreate" nillable="true" type="tns:ShareAccessLevel" />
-          <xsd:element minOccurs="0" maxOccurs="unbounded" name="buttons" nillable="true" type="tns:DescribeLayoutButton" />
+          <xsd:element minOccurs="0" maxOccurs="unbounded" name="buttons" nillable="true"
+                       type="tns:DescribeLayoutButton" />
           <xsd:element minOccurs="1" maxOccurs="unbounded" name="columns" type="tns:RelatedListColumn" />
           <xsd:element name="custom" type="xsd:boolean" />
           <xsd:element name="field" nillable="true" type="xsd:string" />
@@ -13266,7 +13455,8 @@
           <xsd:element name="label" nillable="true" type="xsd:string" />
           <xsd:element name="limitRows" nillable="true" type="xsd:int" />
           <xsd:element name="objectType" type="xsd:string" />
-          <xsd:element minOccurs="0" maxOccurs="unbounded" name="searchColumns" nillable="true" type="tns:DescribeColumn" />
+          <xsd:element minOccurs="0" maxOccurs="unbounded" name="searchColumns" nillable="true"
+                       type="tns:DescribeColumn" />
         </xsd:sequence>
       </xsd:complexType>
       <xsd:complexType name="DescribeColumn">
@@ -13445,7 +13635,8 @@
       <xsd:element name="describeDataCategoryGroupStructuresResponse">
         <xsd:complexType>
           <xsd:sequence>
-            <xsd:element minOccurs="0" maxOccurs="100" name="result" type="tns:DescribeDataCategoryGroupStructureResult" />
+            <xsd:element minOccurs="0" maxOccurs="100" name="result"
+                         type="tns:DescribeDataCategoryGroupStructureResult" />
           </xsd:sequence>
         </xsd:complexType>
       </xsd:element>
@@ -13634,7 +13825,8 @@
       <xsd:element name="describeSearchLayoutsResponse">
         <xsd:complexType>
           <xsd:sequence>
-            <xsd:element minOccurs="0" maxOccurs="unbounded" name="result" nillable="true" type="tns:DescribeSearchLayoutResult" />
+            <xsd:element minOccurs="0" maxOccurs="unbounded" name="result" nillable="true"
+                         type="tns:DescribeSearchLayoutResult" />
           </xsd:sequence>
         </xsd:complexType>
       </xsd:element>
@@ -13672,7 +13864,8 @@
       <xsd:element name="describeTabsResponse">
         <xsd:complexType>
           <xsd:sequence>
-            <xsd:element minOccurs="0" maxOccurs="unbounded" name="result" nillable="true" type="tns:DescribeTabSetResult" />
+            <xsd:element minOccurs="0" maxOccurs="unbounded" name="result" nillable="true"
+                         type="tns:DescribeTabSetResult" />
           </xsd:sequence>
         </xsd:complexType>
       </xsd:element>
@@ -13700,7 +13893,8 @@
       <xsd:element name="describeNounsResponse">
         <xsd:complexType>
           <xsd:sequence>
-            <xsd:element minOccurs="0" maxOccurs="unbounded" name="result" nillable="true" type="tns:DescribeNounResult" />
+            <xsd:element minOccurs="0" maxOccurs="unbounded" name="result" nillable="true"
+                         type="tns:DescribeNounResult" />
           </xsd:sequence>
         </xsd:complexType>
       </xsd:element>
@@ -13962,7 +14156,8 @@
       <xsd:element name="describeAvailableQuickActionsResponse">
         <xsd:complexType>
           <xsd:sequence>
-            <xsd:element minOccurs="0" maxOccurs="unbounded" name="result" type="tns:DescribeAvailableQuickActionResult" />
+            <xsd:element minOccurs="0" maxOccurs="unbounded" name="result"
+                         type="tns:DescribeAvailableQuickActionResult" />
           </xsd:sequence>
         </xsd:complexType>
       </xsd:element>
@@ -14390,12 +14585,14 @@
       <xsd:element name="OwnerChangeOptions">
         <xsd:complexType>
           <xsd:sequence>
-            <xsd:element minOccurs="0" maxOccurs="unbounded" name="options" nillable="true" type="tns:OwnerChangeOption" />
+            <xsd:element minOccurs="0" maxOccurs="unbounded" name="options" nillable="true"
+                         type="tns:OwnerChangeOption" />
           </xsd:sequence>
         </xsd:complexType>
       </xsd:element>
     </xsd:schema>
-    <xsd:schema xmlns="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" targetNamespace="urn:fault.enterprise.soap.sforce.com">
+    <xsd:schema xmlns="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified"
+                targetNamespace="urn:fault.enterprise.soap.sforce.com">
       <xsd:import namespace="urn:enterprise.soap.sforce.com" />
       <xsd:simpleType name="ExceptionCode">
         <xsd:restriction base="xsd:string">
@@ -14751,7 +14948,8 @@
         <xsd:sequence>
           <xsd:element name="exceptionCode" type="fns:ExceptionCode" />
           <xsd:element name="exceptionMessage" type="xsd:string" />
-          <xsd:element minOccurs="0" maxOccurs="unbounded" name="extendedErrorDetails" nillable="true" type="tns:ExtendedErrorDetails" />
+          <xsd:element minOccurs="0" maxOccurs="unbounded" name="extendedErrorDetails" nillable="true"
+                       type="tns:ExtendedErrorDetails" />
         </xsd:sequence>
       </xsd:complexType>
       <xsd:element name="fault" type="fns:ApiFault" />

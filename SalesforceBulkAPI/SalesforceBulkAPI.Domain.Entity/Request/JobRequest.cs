@@ -26,7 +26,8 @@ namespace SalesforceBulkAPI.Domain.Entity.Request
 
         public JobOperation Operation { get; set; }
 
-        public string OperationString {
+        public string OperationString
+        {
             get
             {
                 switch (Operation)

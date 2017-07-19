@@ -21,13 +21,14 @@ namespace SalesforceBulkAPI.Domain.Entity
         public static Batch CreateBatch(string xml)
         {
             var document = XDocument.Parse(xml);
-            var jobInfoChildElements = document.Root != null && document.Root.HasElements ? document.Root.Elements().ToList() : null;
+            var jobInfoChildElements = document.Root != null && document.Root.HasElements
+                ? document.Root.Elements().ToList()
+                : null;
 
             var batch = new Batch();
             if (jobInfoChildElements == null) return null;
 
             foreach (var e in jobInfoChildElements)
-            {
                 switch (e.Name.LocalName)
                 {
                     case "id":
@@ -61,23 +62,21 @@ namespace SalesforceBulkAPI.Domain.Entity
                         batch.ApexProcessingTime = int.Parse(e.Value);
                         break;
                 }
-            }
 
             return batch;
         }
 
-        public static List<Batch> CreateBatches(String xml)
+        public static List<Batch> CreateBatches(string xml)
         {
-            XDocument doc = XDocument.Parse(xml);
-            XElement batchInfoList = doc.Root;
-            List<Batch> batches = new List<Batch>();
+            var doc = XDocument.Parse(xml);
+            var batchInfoList = doc.Root;
+            var batches = new List<Batch>();
 
-            foreach (XNode batchInfoNode in batchInfoList.Nodes())
-            {
-                Batch batch = Batch.CreateBatch(batchInfoNode.ToString());
+            var batchInfoNodes = batchInfoList?.Nodes();
 
-                batches.Add(batch);
-            }
+            if (batchInfoNodes == null) return batches;
+
+            batches.AddRange(batchInfoNodes.Select(batchInfoNode => CreateBatch(batchInfoNode.ToString())));
 
             return batches;
         }

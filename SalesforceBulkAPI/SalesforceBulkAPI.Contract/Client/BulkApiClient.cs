@@ -143,6 +143,11 @@ namespace SalesforceBulkAPI.Contract.Client
             return resultXML;
         }
 
+        public void Dispose()
+        {
+            GC.SuppressFinalize(this);
+        }
+
         public Job CreateJob(JobRequest createJobRequest)
         {
             var jobRequestXML =
@@ -166,7 +171,7 @@ namespace SalesforceBulkAPI.Contract.Client
                 createJobRequest.ContentTypeString,
                 externalField);
 
-            var createJobUrl = _baseRequestUrl.Substring(_baseRequestUrl.Length - 1);
+            var createJobUrl = _baseRequestUrl.Substring(0, _baseRequestUrl.Length - 1);
 
             var resultXML = InvokeRestAPI(createJobUrl, jobRequestXML);
 
@@ -217,8 +222,8 @@ namespace SalesforceBulkAPI.Contract.Client
 
             _loginResult = _salesforceService.login(_userName, string.Concat(_password, _token));
             _salesforceService.Url = _loginResult.serverUrl;
-            _baseRequestUrl = string.Concat(@"https://", _loginResult.sandbox ? "test" : "login",
-                ".salesforce.com/services/async/31.0/job/");
+            _baseRequestUrl = string.Concat(_salesforceService.Url.Substring(0, _salesforceService.Url.IndexOf('/', 8)),
+                "/services/async/31.0/job/");
         }
 
         private string InvokeRestAPI(string endpointURL)
@@ -256,17 +261,17 @@ namespace SalesforceBulkAPI.Contract.Client
             catch (WebException webEx)
             {
                 if (webEx.Response == null) throw;
-
+                string exception;
                 using (var errorResponse = (HttpWebResponse) webEx.Response)
                 {
                     // ReSharper disable once AssignNullToNotNullAttribute
                     using (var reader = new StreamReader(errorResponse.GetResponseStream()))
                     {
-                        reader.ReadToEnd();
+                        exception = reader.ReadToEnd();
                     }
                 }
 
-                throw;
+                throw new Exception(exception);
             }
         }
 
@@ -276,11 +281,6 @@ namespace SalesforceBulkAPI.Contract.Client
             wc.Headers.Add("X-SFDC-Session: " + _loginResult.sessionId);
 
             return wc;
-        }
-
-        public void Dispose()
-        {
-            GC.SuppressFinalize(this);
         }
     }
 }
